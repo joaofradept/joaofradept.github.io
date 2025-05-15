@@ -15,6 +15,14 @@
 
 /* Media query para telemóveis */
 @media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+
+  .wrapper {
+    padding: 3rem 2rem;
+  }
+  
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -59,6 +67,19 @@
   .card {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
+  }
+
+  .project-detail {
+    padding: .8rem;
+    width: 98%;
+    padding-top: 45px;
+    max-height: 98vh;
+  }
+
+  .close-btn {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 0;
   }
 
   .media-container iframe,
