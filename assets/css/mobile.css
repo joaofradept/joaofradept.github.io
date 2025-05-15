@@ -73,7 +73,7 @@
     padding: .8rem;
     width: 98%;
     padding-top: 45px;
-    max-height: calc(98vh - env(safe-area-inset-top, 10px));
+    max-height: calc(100vh - env(safe-area-inset-top) - 2vh);
   }
 
   .close-btn {
