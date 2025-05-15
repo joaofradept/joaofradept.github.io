@@ -1,128 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-PT" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    <style type="text/css">
-
-      :root {
-        --roundness: 30px;
-        --back-color: rgb(83, 8, 8);
-        --sec-back-color: rgb(183, 84, 84);
-      }
-
-      * {
-        box-sizing: border-box;
-        font-size: 1.1em;
-      }
-
-      h1 {
-        box-sizing: border-box;
-        font-size: 2em;
-      }
-
-      body {
-        background-color: var(--back-color);
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .container {
-        border-radius: var(--roundness);
-        background-color: var(--sec-back-color);
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 30px;
-      }
-
-      .content {
-        margin: auto;
-        text-align: center;
-        width: 80%;
-        position: absolute;
-        transform: translateY(-50%);
-        top: 50%;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .main-content {
-        margin-bottom: 40px;
-      }
-
-      .elements {
-        --background-color: rgb(26, 113, 189);
-        display: flex;
-        gap: 30px;
-        justify-content: space-between;
-        width: 100%;
-      }
-
-      .elements .element {
-        background-color: rgba(201, 197, 180, 0.427);
-        width: 200px;
-        height: 300px;
-        border-radius: var(--roundness);
-      }
-      
-    </style>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="./assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="./assets/ico/favicon.png">
-  </head>
-
-  <body>
-
-    <div class="container">
-      <div class="row my-3 content">
-        <div class="main-content" class="col-12">
-          <h1>João Frade</h1>
-          <h4>Programador / Programmer</h4>
-		  <br><br>
-		  <p>This website is not yet made. Please visit <a href="https://joaofradept.rf.gd/en" target="_blank">my current Portfolio instead</a>.
-		  <p>Este site ainda não está feito. Visite antes <a href="https://joaofradept.rf.gd/" target="_blank">o meu Portefólio atual</a>.
-          <!-- <div class="body">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos natoque commodo posuere lobortis dictumst, habitasse nascetur neque. Blandit aenean sed dui integer non augue. Eget tristique vivamus proin vestibulum luctus magnis dignissim phasellus. Condimentum ligula himenaeos porttitor tristique eleifend. Ultricies pretium velit nunc fringilla venenatis egestas non accumsan. Orci aptent proin per porta netus penatibus tellus etiam. Habitasse risus parturient volutpat porta vehicula ullamcorper natoque netus velit. Venenatis elementum condimentum accumsan, litora turpis nisl eros. Orci risus litora consequat auctor mattis duis pellentesque.
-          </div>-->
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>João Frade Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/css/downloadIcons.css" />
+  <link rel="stylesheet" href="assets/css/lightbox.css" />
+  <link rel="stylesheet" href="assets/css/empty.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="navbar">
+        <div class="site-branding">
+          <div class="site-title">João Frade</div>
+          <p class="subtitle">Game Developer & Programmer</p>
         </div>
-        <div class="elements">
-          <div class="element"></div>
-          <div class="element"></div>
-          <div class="element"></div>
-          <div class="element"></div>
-          <div class="element"></div>
-          <div class="element"></div>
-        </div>
+        <nav class="menu">
+          <ul>
+            <li class="active"><a href="#games" data-target="games" class="nav-link">Games</a></li>
+            <li class="nav-link"><a href="#empty" data-target="empty" class="nav-link">Projects</a></li>
+            <li class="nav-link"><a href="#empty" data-target="empty" class="nav-link">About Me</a></li>
+            <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="underline"></div>
+        </nav>
       </div>
-    </div> <!-- /container -->
+    </header>
+    <main>
+      <section id="games" class="active">
+        <div class="gallery">
+          <!-- Cartões de imagem -->
+          <div class="card" data-id="z-o-p">
+            <img src="assets/images/z-o-p.png" alt="">
+          </div>
+          <div class="card wide" data-id="gbl4deaf">
+            <img src="assets/images/gbl4deaf.jpg" alt="">
+          </div>
+          <div class="card tall" data-id="precipitacao">
+            <img src="assets/images/precipitacao.png" alt="">
+          </div>
+          <div class="card tall" data-id="o-popo-laranja">
+            <img src="assets/images/o-popo-laranja.png" alt="">
+          </div>
+          <div class="card" data-id="vaca-cos-porcos">
+            <img src="assets/images/vaca-cos-porcos.png" alt="">
+          </div>
+          <div class="card" data-id="capitao-iglo">
+            <img src="assets/images/capitao-iglo.png" alt="">
+          </div>
+          <div class="card wide" data-id="anamara-3d">
+            <img src="assets/images/anamara2.png"  alt="">
+          </div>
+          <div class="card wide" data-id="o-explorador">
+            <img src="assets/images/o-explorador.png" alt="">
+          </div>
+          <div class="card" data-id="dungeon-x">
+            <img src="assets/images/dungeon-x.jpg" alt="">
+          </div>
+          <div class="card" data-id="come-isso">
+            <img src="assets/images/come-isso.png" alt="">
+          </div>
+          <div class="card" data-id="asdigital">
+            <img src="assets/images/asdigital.png"  alt="">
+          </div>
+          <div class="card wide" data-id="careto">
+            <img src="assets/images/careto.png"  alt="">
+          </div>
+          <div class="card wide" data-id="ficha-tripla">
+            <img src="assets/images/ficha-tripla.jpeg" alt="">
+          </div>
+
+          <!-- Detalhes do Projeto -->
+          <div class="overlay hidden"></div>
+          <div class="project-detail hidden">
+            <button class="close-btn">×</button>
+            <div id="project-media-container" class="media-container">
+              <!-- imagem/vídeo será injetado aqui -->
+            </div>
+            <div id="project-downloads" class="download-icons">
+              <!-- botões para acesso ao jogo serão injetados aqui -->
+            </div>
+            <div class="text-content">
+              <h2 id="project-title"></h2>
+              <div id="project-tags" class="tag-container"></div>
+              <p id="project-description"></p>
+              <div id="project-gallery" class="gallery-images"></div>
+              <div id="image-lightbox" class="lightbox hidden">
+              <div class="lightbox-content">
+                <button class="lightbox-close">×</button>
+                <img src="" alt="Imagem expandida">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+      <section id="contact" style="display: none;">
+          <h2>Let’s connect</h2>
+          <p>If you’ve seen something here that caught your attention, or just want to say hi — feel free to reach out.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:joaofradept@gmail.com">📧 Email me</a></li>
+            <li><a href="https://www.linkedin.com/in/joaofradept/" target="_blank">💼 LinkedIn</a></li>
+            <li><a href="https://github.com/joaofradept/" target="_blank">🐙 GitHub</a></li>
+          </ul>
+      </section>
+      <section id="empty" class="empty-message">
+        <h2>Great things will be here soon!</h2>
+        <p>Stay tuned — something awesome is coming your way.</p>
+        <small>This space is being prepared with care. Check back later!</small>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 João Frade. All rights reserved.</p>
+    </footer>
+  </div>
 
 
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
-
-  </body>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/downloadIcons.js"></script>
+  <script src="assets/js/gameData.js"></script>
+  <script src="assets/js/tagDefinitions.js"></script>
+</body>
 </html>
