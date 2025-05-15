@@ -1,0 +1,68 @@
+/* Garante título centrado */
+.site-title {
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilo do botão de menu */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media query para telemóveis */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .menu.open {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .menu .underline {
+    display: none;    
+  }
+
+  .card {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .media-container iframe,
+  .media-container img {
+    height: 200px;
+  }
+}
