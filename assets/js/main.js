@@ -56,6 +56,10 @@ $(document).ready(function () {
 
 $(".card").on("click", function () {
   const id = $(this).data("id");
+  showGameDetails(id);
+});
+
+function showGameDetails(id) {
   const data = gameData[id];
 
   $("#project-title").text(data.title);
@@ -185,7 +189,7 @@ $(".card").on("click", function () {
   
   // O scroll volta ao topo
   $(".project-detail").scrollTop(0);
-});
+}
 
 $(".close-btn, .overlay").on("click", function () {
   $(".overlay").removeClass("visible");
