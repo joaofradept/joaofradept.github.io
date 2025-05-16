@@ -1,7 +1,7 @@
 const gameData = {
   "ficha-tripla": {
     title: "Ficha Tripla (Triple Plug)",
-    description: "A HUGE welcome to all reading this! Let us introduce the most thrilling math game for deaf players and everyone else in the world!—who’s ready to soar with tangled cables, lightning bolts, and pure chaos. At light speed, can you reach the legendary Triple Plug? That’s the challenge waiting on every map. This is your chaos. This is your game. ⚡ This is your Fichaaaaa! ⚡",
+    description: "A HUGE welcome to all reading this! Let us introduce the most thrilling math game for deaf players and everyone else in the world!—who’s ready to soar with tangled cables, lightning bolts, and pure chaos. At light speed, can you reach the legendary Ficha Tripla (it's a... triple socket adapter)? That’s the challenge waiting on every map. This is your chaos. This is your game. ⚡ This is your Fichaaaaa! ⚡",
     video: "https://youtu.be/G_H5imJwk_g",
     tags: ["unity", "gamedesign", "developer", "undergraduate", "educacaoacessivel", "years:2017-2019"],
     gallery: [
