@@ -28,15 +28,6 @@
     align-items: center;
   }
 
-  .site-title {
-    font-size: 2rem;
-  }
-
-  .subtitle {
-    text-align: center;
-    font-size: 1rem;
-  }
-
   .menu-toggle {
     display: block;
     margin-bottom: 1rem;
@@ -85,5 +76,26 @@
   .media-container iframe,
   .media-container img {
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 860px) and (min-width: 600px) {
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    margin-left: 0;
   }
 }
