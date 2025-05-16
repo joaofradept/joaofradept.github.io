@@ -108,7 +108,7 @@ const gameData = {
   "o-explorador": {
     title: "The Explorer",
     description: "We wake up inside an interesting cavern. Who are we?! This time, explorers! This is a Math Game in adventure format in which two explorers overcome challenges to reach a treasure. It is accessible to deaf students in the 3rd cycle of basic education, and includes questions and instructions in Portuguese, British, and Brazilian Sign Languages. Theme: probabilities.",
-    tags: ["unity", "gamedesign", "developer", "educacaoacessivel", "years:2020-2021"],
+    tags: ["unity", "gamedesign", "developer", "educacaoacessivel", "years:2020"],
     gallery: [
       "assets/images/o-explorador/explorador-6.png",
       "assets/images/o-explorador/explorador-9.png",
