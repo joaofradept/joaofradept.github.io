@@ -116,8 +116,7 @@ const gameData = {
     ],
     links: [
       { type: "windows", url: "https://educacaoacessivel.ulusofona.pt/en/3-ciclo/explorador/" },
-      { type: "mac", url: "https://educacaoacessivel.ulusofona.pt/en/3-ciclo/explorador/" },
-      { type: "web", url: "https://educacaoacessivel.ulusofona.pt/wp-content/uploads/o-explorador-2/index.html" }
+      { type: "mac", url: "https://educacaoacessivel.ulusofona.pt/en/3-ciclo/explorador/" }
     ]
   },
   "z-o-p": {

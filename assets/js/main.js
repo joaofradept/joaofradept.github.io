@@ -63,10 +63,10 @@ $(".card").on("click", function () {
 
   const $mediaContainer = $("#project-media-container");
   $mediaContainer.empty();
-  const imageSrc = $(this).find("img").attr("src");
+  const imageSrc = `assets/images/_covers/${id}.webp`;
 
-        // Renderiza os botões para acesso ao jogo
-        renderDownloadIcons(data.links || []);
+  // Renderiza os botões para acesso ao jogo
+  renderDownloadIcons(data.links || []);
 
   if (data.video) {
     const $img = $("<img>")
