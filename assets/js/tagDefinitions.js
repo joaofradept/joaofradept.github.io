@@ -9,6 +9,7 @@ const tagDefinitions = {
   csharp:        { label: "C#", type: "role" },
   gamedesign:    { label: "Game Designer", type: "role" },
   developer:     { label: "Game Developer", type: "role" },
+  artist3d:     { label: "3D Artist", type: "role" },
 
   // Platforms
   webgl:         { label: "WebGL", type: "platform" },

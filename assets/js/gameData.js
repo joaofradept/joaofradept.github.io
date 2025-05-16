@@ -48,7 +48,7 @@ const gameData = {
     image: "assets/images/anamara.png",
     description: "Anamara 3D is a first-person 3D psychological horror puzzle and story exploration game based on the old Flash game The Stone of Anamara. It's a cloudy night... You play as Ezequiel, who has just run away from the police and arrives at a sinister building that appears to be the perfect hiding place. Face supernatural forces, unveil the mysteries hidden in the Mental Asylum for Children and fulfil the destiny of the stone of Anamara.",
     video: "https://www.youtube.com/watch?v=7yMuuWABT6A",
-    tags: ["unity", "gamedesign", "developer", "personal", "years:2020-Today"],
+    tags: ["unity", "gamedesign", "developer", "artist3d", "personal", "years:2020-Today"],
     gallery: [
       "assets/images/anamara-3d/fmO2IL.png",
       "assets/images/anamara-3d/1fnGwR.png",
