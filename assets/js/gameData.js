@@ -99,7 +99,7 @@ const gameData = {
     gallery: [
       "assets/images/vaca-cos-porcos/19970170_KkPEk.jpeg",
       "assets/images/vaca-cos-porcos/8MHtEb.png",
-      "assets/images/vaca-cos-porcos/_cvTpg.png",
+      "assets/images/vaca-cos-porcos/cvTpg.png",
     ],
     links: [
       { type: "windows", url: "https://100nome.itch.io/vaca-cos-porcos" }
