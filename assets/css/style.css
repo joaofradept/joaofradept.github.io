@@ -195,12 +195,12 @@ main section.active {
   flex-grow: 1;
 }
 
-.card h3 {
+/*.card h3 {
   margin: 0;
   padding: 10px;
   background: white;
   font-size: 1rem;
-}
+}*/
 
 /* Tamanhos especiais */
 .card.small {
@@ -249,7 +249,7 @@ main section.active {
   border-radius: 1rem;
 }
 
-.project-detail {
+.detail-modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -269,12 +269,12 @@ main section.active {
   border: 1px solid rgba(0,0,0,0.1);
 }
 
-.project-detail.visible {
+.detail-modal.visible {
   display: block;
   animation: fadeIn 0.4s ease;
 }
 
-.project-detail h2 {
+.detail-modal h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -282,7 +282,7 @@ main section.active {
   font-family: 'Montserrat', sans-serif;
 }
 
-.project-detail p {
+.detail-modal p {
   font-size: 1rem;
   line-height: 1.7;
   color: #333;

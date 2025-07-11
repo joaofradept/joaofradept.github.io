@@ -1,0 +1,25 @@
+.projects-chaotic {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card.chaos {
+  background: #f5f5f5;
+  padding: 1rem 1.5rem;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  transform: rotate(var(--rotation));
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-card.chaos:hover {
+  transform: scale(1.05) rotate(var(--rotation));
+  box-shadow: 4px 6px 12px rgba(0,0,0,0.2);
+}

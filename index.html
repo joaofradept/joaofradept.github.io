@@ -9,6 +9,9 @@
   <title>João Frade Portfolio</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
+  <link rel="stylesheet" href="assets/css/chaos.css" />
+  <link rel="stylesheet" href="assets/css/timeline.css" />
   <link rel="stylesheet" href="assets/css/contact.css" />
   <link rel="stylesheet" href="assets/css/downloadIcons.css" />
   <link rel="stylesheet" href="assets/css/lightbox.css" />
@@ -30,8 +33,8 @@
         <nav class="menu">
           <ul>
             <li class="active"><a href="#games" data-target="games">Games</a></li>
-            <li><a href="#empty" data-target="empty">Projects</a></li>
-            <li><a href="#empty" data-target="empty">About Me</a></li>
+            <li><a href="#projects" data-target="projects">Projects</a></li>
+            <!-- <li><a href="#about" data-target="about">About Me</a></li> -->
             <li><a href="#contact" data-target="contact">Contact</a></li>
           </ul>
           <div class="underline"></div>
@@ -82,9 +85,9 @@
             <img src="assets/images/ficha-tripla.webp" alt="">
           </div>
 
-          <!-- Detalhes do Projeto -->
+          <!-- Detalhes do Jogo -->
           <div class="overlay hidden"></div>
-          <div class="project-detail hidden">
+          <div class="game detail-modal hidden">
             <button class="close-btn">×</button>
             <div id="project-media-container" class="media-container">
               <!-- imagem/vídeo será injetado aqui -->
@@ -98,18 +101,21 @@
               <p id="project-description"></p>
               <div id="project-gallery" class="gallery-images"></div>
               <div id="image-lightbox" class="lightbox hidden">
-              <div class="lightbox-content">
-                <button class="lightbox-close">×</button>
-                <img src="" alt="Imagem expandida">
+                <div class="lightbox-content">
+                  <button class="lightbox-close">×</button>
+                  <img src="" alt="Imagem expandida">
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
        
       </section>
-      <section id="contact" style="display: none;">
-          <h2>Let’s connect</h2>
+      <section id="contact" style="display: none;" class="contact-section">
+          <!-- <h2>Let’s connect</h2> -->
+          <!-- <h2>Join me for a coffee!</h2> -->
+          <!-- <h2>☕ with me!</h2> -->
+          <h2>Let’s coffect ☕</h2>
           <p>If you’ve seen something here that caught your attention, or just want to say hi — feel free to reach out.</p>
           <ul class="contact-links">
             <li><a href="mailto:joaofradept@gmail.com?subject=Quick%20message&body=Wow%2C%20Jo%C3%A3o%2C%20you%27re%20absolutely%20amazing.%20I%20just%20had%20to%20tell%20you%20this%3A%0A%0A">📧 Email me</a></li>
@@ -117,6 +123,84 @@
             <li><a href="https://github.com/joaofradept/" target="_blank">🐙 GitHub</a></li>
           </ul>
       </section>
+      <section id="projects" class="timeline">
+        <div class="card project-card left" data-project-id="anamara2" onclick="openProjectModal('anamara2')">
+          <span class="date">2024-Today</span>
+          <div class="content">
+            <h3>TUMO</h3>
+            <p>Workshop Leader at TUMO, guiding students during workshops at developing Game Design and Programming skills within the Unity Game Engine.</p>
+          </div>
+        </div>
+
+        <div class="project-card right">
+          <span class="date">2022</span>
+          <div class="content">
+            <h3>ASDigital</h3>
+            <p>This project contains a serious game designed for children with ASD. I played a central role in developing it, and represented it in Türkiye.</p>
+          </div>
+        </div>
+
+        <div class="project-card left">
+          <span class="date">2021-2025</span>
+          <!-- <span class="date">2021</span> -->
+          <div class="content">
+            <h3>OPERAT</h3>
+            <p>Games with accessibility in mind, made by university students, designed for people with intellectual impairment. I did quality control on all of the eight video games, and adapted them for WebGL.</p>
+          </div>
+        </div>
+
+        <div class="project-card right">
+          <span class="date">2021</span>
+          <div class="content">
+            <h3>diPlay Gamepad</h3>
+            <p>An accessible & adjustable gamepad for people with intellectual impairment. I programmed the Arduino board and an application for key mapping.</p>
+          </div>
+        </div>
+
+        <div class="project-card left">
+          <span class="date">2019-2021</span>
+          <div class="content">
+            <h3>GBL4deaf</h3>
+            <p>An accessible & adjustable gamepad for people with intellectual impairment. I programmed the Arduino board and an application for key mapping.</p>
+          </div>
+        </div>
+
+        <div class="project-card right">
+          <span class="date">2017-2025</span>
+          <!-- <span class="date">2017-2019</span> -->
+          <div class="content">
+            <h3>Educação Acessível</h3>
+            <p>🏆 Prize-winning project! Active participation in this project on inclusive video games made for deaf people. I improved and fixed several student games, and was responsible for their implementation in other languages. Represented the project in Portugal and Denmark with the game Ficha Tripla.</p>
+          </div>
+        </div>
+
+        <div class="project-card left">
+          <span class="date">2009</span>
+          <div class="content">
+            <h3>100Nome Traduções</h3>
+            <p>When I was 12 years old, I started localizing video games during my free time into Portuguese. Developed strong language and localization skills over time, and counting many translations by now.</p>
+          </div>
+        </div>
+
+        <!-- Detalhes do Projeto -->
+        <div class="overlay hidden"></div>
+        <div class="project detail-modal hidden">
+          <button class="close-btn">×</button>
+          <div id="project-media-container" class="media-container">
+            <!-- imagem/vídeo será injetado aqui -->
+          </div>
+          <div id="project-downloads" class="download-icons">
+            <!-- botões para acesso ao jogo serão injetados aqui -->
+          </div>
+          <div class="text-content">
+            <h2 id="project-title"></h2>
+            <div id="project-tags" class="tag-container"></div>
+            <p id="project-description"></p>
+            <div id="project-gallery" class="gallery-images"></div>
+          </div>
+        </div>
+      </section>
+
       <section id="empty" class="empty-message">
         <h2>Great things will be here soon!</h2>
         <p>Stay tuned — something awesome is coming your way.</p>
@@ -130,6 +214,7 @@
 
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
   <script src="assets/js/mobile.js"></script>
   <script src="assets/js/handleParams.js"></script>
   <script src="assets/js/downloadIcons.js"></script>

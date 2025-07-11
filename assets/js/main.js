@@ -109,7 +109,7 @@ function showGameDetails(id) {
 
   $("body").css("overflow", "hidden"); // BLOQUEIA O SCROLL
   $(".overlay").addClass("visible");
-  $(".project-detail").addClass("visible");
+  $(".game.detail-modal").addClass("visible");
 
   const tags = data.tags || [];
   const $tagContainer = $("#project-tags");
@@ -152,7 +152,7 @@ function showGameDetails(id) {
   });
 
   // Remove qualquer galeria anterior
-  $(".project-detail .project-gallery").remove();
+  $(".game.detail-modal .project-gallery").remove();
 
   // Galeria de imagens
   if (data.gallery && data.gallery.length > 0) {
@@ -184,16 +184,16 @@ function showGameDetails(id) {
       $gallery.append($imgWrapper);
 
     });
-    $(".project-detail").append($gallery);
+    $(".game.detail-modal").append($gallery);
   }
   
   // O scroll volta ao topo
-  $(".project-detail").scrollTop(0);
+  $(".game.detail-modal").scrollTop(0);
 }
 
 $(".close-btn, .overlay").on("click", function () {
   $(".overlay").removeClass("visible");
-  $(".project-detail").removeClass("visible");
+  $(".game.detail-modal").removeClass("visible");
   $("body").css("overflow", "auto"); // VOLTA O SCROLL
   // Remove o iframe para parar o vídeo
   $("#project-media-container iframe").remove();

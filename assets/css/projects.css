@@ -1,0 +1,57 @@
+.project-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+
+.project-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-modal .modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 900px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-content .left {
+  flex: 1;
+}
+
+.modal-content .right img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.links a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #007BFF;
+  text-decoration: underline;
+}

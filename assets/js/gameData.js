@@ -30,7 +30,7 @@ const gameData = {
     ]
   },
   "asdigital": {
-    title: "ASDigital - Desktop Adventure",
+    title: "Desktop Adventure",
     description: "This game is part of an e-course with educational materials, a serious game, and visual thinking video tutorials (specially designed for students with ASD) to train them on the basic digital skills they are going to need when they graduate from school. I played a central role in developing and designing this game and represented it abroad.",
     tags: ["unity", "gamedesign", "developer", "asdigital", "years:2022"]
   },
