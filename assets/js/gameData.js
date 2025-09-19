@@ -15,24 +15,33 @@ const gameData = {
       { type: "mac", url: "https://educacaoacessivel.ulusofona.pt/en/3-ciclo/fichatripla/" }
     ]
   },
-  "gbl4deaf": {
+  "space-adventure": {
     title: "Space Adventure - Defend the Planet",
     description: "Space Adventure: Defend the Planet is a research-based game aimed at supporting a more inclusive education in primary maths for deaf and hard of hearing (DHH) students, as well as to their hearing peers. Work in progress results shows an increase in mathematics achievement between 8% and 20% for 6 participants, while no improvement for 4 participants. Space Adventure: Defend the Planet contributes to the following SDGs: “Quality Education”, “Good Health and Well-being”, “Reduced Inequalities” and “No poverty”.",
     video: "https://youtu.be/LxgiG_WcxxU",
     tags: ["unity", "developer", "gbl4deaf", "years:2019-2022"],
     gallery: [
-      "assets/images/gbl4deaf/WorldCinematic_L.jpg",
-      "assets/images/gbl4deaf/LGPPanel_L.jpg",
-      "assets/images/gbl4deaf/Challenge02_L.jpg"
+      "assets/images/space-adventure/WorldCinematic_L.jpg",
+      "assets/images/space-adventure/LGPPanel_L.jpg",
+      "assets/images/space-adventure/Challenge02_L.jpg"
     ],
     links: [
       { type: "windows", url: "https://gbl4deaf.itch.io/spaceadventure-en" }
     ]
   },
-  "asdigital": {
+  "desktop-adventure": {
     title: "ASDigital - Desktop Adventure",
     description: "This game is part of an e-course with educational materials, a serious game, and visual thinking video tutorials (specially designed for students with ASD) to train them on the basic digital skills they are going to need when they graduate from school. I played a central role in developing and designing this game and represented it abroad.",
-    tags: ["unity", "gamedesign", "developer", "asdigital", "years:2022"]
+    tags: ["unity", "gamedesign", "developer", "asdigital", "years:2022"],
+    gallery: [
+      "assets/images/desktop-adventure/SCLHRH.png",
+      "assets/images/desktop-adventure/4tDvLh.png",
+      "assets/images/desktop-adventure/Kf3RcM.png",
+      "assets/images/desktop-adventure/asdigital.webp"
+    ],
+    links: [
+      { type: "windows", url: "https://cicant.itch.io/asdigital-desktop-adventure" }
+    ]
   },
   "o-popo-laranja": {
     title: "O Popó Laranja (The Orange Vehicle)",
@@ -41,6 +50,9 @@ const gameData = {
     tags: ["unity", "gamedesign", "developer", "undergraduate", "years:2017"],
     gallery: [
       "assets/images/o-popo-laranja/DYO2TOx.png"
+    ],
+    links: [
+      { type: "windows", url: "https://joaofradept.itch.io/o-popo-laranja" }
     ]
   },
   "anamara-3d": {
