@@ -331,6 +331,11 @@ main section.active {
   animation: fadeIn 0.4s ease;
 }
 
+/* Animação de saída para o project-detail */
+.project-detail.closing {
+  animation: fadeOut 0.4s ease forwards;
+}
+
 .project-detail h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -436,10 +441,15 @@ margin-bottom: 2rem;
   backdrop-filter: blur(5px);
   z-index: 999;
   display: none;
+  transition: opacity 0.4s ease;
 }
 
 .overlay.visible {
   display: block;
+}
+
+.overlay.closing {
+  opacity: 0;
 }
 
 .close-btn {
@@ -618,6 +628,12 @@ footer a:hover {
 @keyframes fadeIn {
   from { opacity: 0; transform: translate(-50%, -60%); }
   to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Keyframes para a animação de fechar o project-detail */
+@keyframes fadeOut {
+  from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  to { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
 }
 
 @keyframes floatIn {

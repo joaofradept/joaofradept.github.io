@@ -14,7 +14,7 @@ function showSection(id) {
 
   const target = document.getElementById(id);
   target.style.display = "block";
-  
+
   setTimeout(() => target.classList.add("active"), 10);
 }
 
@@ -186,17 +186,24 @@ function showGameDetails(id) {
     });
     $(".project-detail").append($gallery);
   }
-  
+
   // O scroll volta ao topo
   $(".project-detail").scrollTop(0);
 }
 
-$(".close-btn, .overlay").on("click", function () {
-  $(".overlay").removeClass("visible");
-  $(".project-detail").removeClass("visible");
-  $("body").css("overflow", "auto"); // VOLTA O SCROLL
-  // Remove o iframe para parar o vídeo
-  $("#project-media-container iframe").remove();
+$(".close-btn, .overlay").on("click", function() {
+  // Adiciona a classe de fechamento para iniciar a animação
+  $(".project-detail").addClass("closing");
+  $(".overlay").addClass("closing");
+
+  // Remove os elementos após a animação terminar
+  setTimeout(() => {
+    $(".overlay").removeClass("visible closing");
+    $(".project-detail").removeClass("visible closing");
+    $("body").css("overflow", "auto"); // VOLTA O SCROLL
+    // Remove o iframe para parar o vídeo
+    $("#project-media-container iframe").remove();
+  }, 250); // Tempo deve corresponder à duração da animação
 });
 
 
