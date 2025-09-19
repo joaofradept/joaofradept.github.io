@@ -191,20 +191,28 @@ function showGameDetails(id) {
   $(".project-detail").scrollTop(0);
 }
 
-$(".close-btn, .overlay").on("click", function() {
-  // Adiciona a classe de fechamento para iniciar a animação
+// Fecha ao clicar no X ou no overlay
+$(".close-btn, .overlay").on("click", closeProjectDetail);
+
+// Fecha ao carregar Esc
+$(document).on("keydown", function (e) {
+  if (e.key === "Escape") {
+    closeProjectDetail();
+  }
+});
+
+function closeProjectDetail() {
   $(".project-detail").addClass("closing");
   $(".overlay").addClass("closing");
 
-  // Remove os elementos após a animação terminar
   setTimeout(() => {
     $(".overlay").removeClass("visible closing");
     $(".project-detail").removeClass("visible closing");
-    $("body").css("overflow", "auto"); // VOLTA O SCROLL
-    // Remove o iframe para parar o vídeo
+    $("body").css("overflow", "auto"); // volta o scroll
+    // Remove iframe para parar o vídeo
     $("#project-media-container iframe").remove();
-  }, 250); // Tempo deve corresponder à duração da animação
-});
+  }, 250); // igual à duração da animação
+}
 
 //a[href^="#"]
 $('a[href="#games"]').on('click', function(event) {
