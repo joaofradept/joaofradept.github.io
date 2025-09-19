@@ -206,10 +206,11 @@ $(".close-btn, .overlay").on("click", function() {
   }, 250); // Tempo deve corresponder à duração da animação
 });
 
+//a[href^="#"]
+$('a[href="#games"]').on('click', function(event) {
+  const target = $('.navbar .site-branding');
 
-$('a[href^="#"]').on('click', function(event) {
-  const target = $($(this).attr('href'));
-
+  $(".project-detail").scrollTop(0);
   if (target.length) {
     event.preventDefault();
     $('html, body').animate({

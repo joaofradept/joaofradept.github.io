@@ -31,7 +31,7 @@
         <nav class="menu">
           <ul>
             <li class="active"><a href="#games" data-target="games">Games</a></li>
-            <li><a href="#empty" data-target="empty">Projects</a></li>
+            <li><a href="#projects" data-target="projects">Projects</a></li>
             <li><a href="#empty" data-target="empty">About Me</a></li>
             <li><a href="#contact" data-target="contact">Contact</a></li>
           </ul>
@@ -48,6 +48,7 @@
           </div>
           <div class="card wide" data-id="gbl4deaf">
             <img src="assets/images/gbl4deaf.webp" alt="">
+            <h3>Research-based 3D game in Unity</h3>
           </div>
           <div class="card tall" data-id="precipitacao">
             <img src="assets/images/precipitacao.webp" alt="">
@@ -63,6 +64,7 @@
           </div>
           <div class="card wide" data-id="anamara-3d">
             <img src="assets/images/anamara.webp"  alt="">
+            <h3>Personal project supported by community</h3>
           </div>
           <div class="card wide" data-id="o-explorador">
             <img src="assets/images/o-explorador.webp" alt="">
@@ -77,39 +79,16 @@
             <img src="assets/images/asdigital.webp"  alt="">
           </div>
           <div class="card wide" data-id="careto">
-            <img src="assets/images/careto.webp"  alt="">
+            <img src="assets/images/careto.png"  alt="">
+            <h3>Based on a Portuguese folclore</h3>
           </div>
           <div class="card wide" data-id="ficha-tripla">
             <img src="assets/images/ficha-tripla.webp" alt="">
           </div>
-
-          <!-- Detalhes do Projeto -->
-          <div class="overlay hidden"></div>
-          <div class="project-detail hidden">
-            <button class="close-btn">×</button>
-            <div id="project-media-container" class="media-container">
-              <!-- imagem/vídeo será injetado aqui -->
-            </div>
-            <div id="project-downloads" class="download-icons">
-              <!-- botões para acesso ao jogo serão injetados aqui -->
-            </div>
-            <div class="text-content">
-              <h2 id="project-title"></h2>
-              <div id="project-tags" class="tag-container"></div>
-              <p id="project-description"></p>
-              <div id="project-gallery" class="gallery-images"></div>
-              <div id="image-lightbox" class="lightbox hidden">
-              <div class="lightbox-content">
-                <button class="lightbox-close">×</button>
-                <img src="" alt="Imagem expandida">
-              </div>
-            </div>
-            </div>
-          </div>
         </div>
        
       </section>
-      <section id="contact" style="display: none;">
+      <section id="contact">
           <h2>Let’s connect</h2>
           <p>If you’ve seen something here that caught your attention, or just want to say hi — feel free to reach out.</p>
           <ul class="contact-links">
@@ -118,11 +97,71 @@
             <li><a href="https://github.com/joaofradept/" target="_blank">GitHub</a></li>
           </ul>
       </section>
+      <section id="projects">
+        <div class="gallery">
+          <!-- Cartões de imagem -->
+          <div class="card" data-id="tumo">
+            <img src="assets/images/tumo.webp" alt="">
+            <h3>TUMO - game development workshop leader</h3>
+          </div>
+          <div class="card" data-id="gbl4deaf">
+            <img src="assets/images/gbl4deaf.png" alt="">
+            <h3>GBL4deaf - video game research project</h3>
+          </div>
+          <div class="card" data-id="educacao-acessivel">
+            <img src="assets/images/educacaoacessivel.png" alt="">
+            <h3>Educação Acessível - inclusive games' Q&A</h3>
+          </div>
+          <div class="card" data-id="operat">
+            <img src="assets/images/operat.png" alt="">
+            <h3>OPERAT - inclusive game's Q&A</h3>
+          </div>
+          <div class="card" data-id="asdigital">
+            <img src="assets/images/asdigital.png" alt="">
+            <h3>ASDigital - video game research project</h3>
+          </div>
+          <div class="card" data-id="diplay">
+            <img src="assets/images/diplay.png" alt="">
+            <h3>diPlay - modular gamepad for accessibility</h3>
+          </div>
+          <div class="card" data-id="100nome">
+            <img src="assets/images/100nome.png" alt="">
+            <h3>100Nome - video game localization</h3>
+          </div>
+        </div>
+      </section>
       <section id="empty" class="empty-message">
         <h2>Great things will be here soon!</h2>
         <p>Stay tuned — something awesome is coming your way.</p>
         <small>This space is being prepared with care. Check back later!</small>
       </section>
+
+      <!-- Elementos gerais às páginas -->
+      <div id="general">
+        <!-- Detalhes do Projeto -->
+        <div class="overlay hidden"></div>
+        <div class="project-detail hidden">
+          <button class="close-btn">×</button>
+          <div id="project-media-container" class="media-container">
+            <!-- imagem/vídeo será injetado aqui -->
+          </div>
+          <div id="project-downloads" class="download-icons">
+            <!-- botões para acesso ao jogo serão injetados aqui -->
+          </div>
+          <div class="text-content">
+            <h2 id="project-title"></h2>
+            <div id="project-tags" class="tag-container"></div>
+            <p id="project-description"></p>
+            <div id="project-gallery" class="gallery-images"></div>
+            <div id="image-lightbox" class="lightbox hidden">
+              <div class="lightbox-content">
+                <button class="lightbox-close">×</button>
+                <img src="" alt="Expanded image">
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
     </main>
     <footer>
       <p>&copy; 2025 João Frade. All rights reserved.</p>
