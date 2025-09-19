@@ -202,6 +202,7 @@ $(document).on("keydown", function (e) {
 });
 
 function closeProjectDetail() {
+  removeQueryParam("game"); // remove o ?game=xyz da barra de endereços
   $(".project-detail").addClass("closing");
   $(".overlay").addClass("closing");
 
