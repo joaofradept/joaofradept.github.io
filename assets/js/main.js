@@ -98,11 +98,14 @@ function showGameDetails(id) {
     const $playBtn = $("<div>").addClass("play-button");
     $wrapper.append($img).append($playBtn);
 
+    addImageLoader($img);
     $mediaContainer.append($wrapper);
   } else {
     const $img = $("<img>")
       .attr("src", imageSrc)
       .attr("id", "project-image");
+
+    addImageLoader($img);
     $mediaContainer.append($img);
     //$mediaContainer.append($("<img>").attr("src", imageSrc));
   }
@@ -180,6 +183,7 @@ function showGameDetails(id) {
         $imgWrapper.addClass("expanded");
       }
 
+      addImageLoader($img);
       $imgWrapper.append($img);
       $gallery.append($imgWrapper);
 

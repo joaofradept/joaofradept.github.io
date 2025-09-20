@@ -1,0 +1,20 @@
+.img-spinner {
+  width: 100%;
+  padding-top: 56.25%; /* proporção 16:9 para placeholder */
+  background: repeating-linear-gradient(
+    45deg,
+    #ddd,
+    #ddd 10px,
+    #eee 10px,
+    #eee 20px
+  );
+  background-size: 200% 200%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 10px;
+  position: relative;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

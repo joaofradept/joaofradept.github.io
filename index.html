@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/css/lightbox.css" />
   <link rel="stylesheet" href="assets/css/empty.css" />
   <link rel="stylesheet" href="assets/css/mobile.css" />
+  <link rel="stylesheet" href="assets/css/imageLoader.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -103,31 +104,31 @@
         <div class="gallery">
           <!-- Cartões de imagem -->
           <div class="card" data-id="tumo">
-            <img src="assets/images/tumo.webp" alt="">
+            <img src="assets/images/tumo.webp" alt="" loading="lazy">
             <h3>TUMO - game development workshop leader</h3>
           </div>
           <div class="card" data-id="gbl4deaf">
-            <img src="assets/images/gbl4deaf.png" alt="">
+            <img src="assets/images/gbl4deaf.png" alt="" loading="lazy">
             <h3>GBL4deaf - video game research project</h3>
           </div>
-          <div class="card" data-id="educacao-acessivel">
+          <div class="card" data-id="educacao-acessivel" loading="lazy">
             <img src="assets/images/educacaoacessivel.png" alt="">
             <h3>Educação Acessível - inclusive games' Q&A</h3>
           </div>
           <div class="card" data-id="operat">
-            <img src="assets/images/operat.png" alt="">
+            <img src="assets/images/operat.png" alt="" loading="lazy">
             <h3>OPERAT - inclusive game's Q&A</h3>
           </div>
           <div class="card" data-id="asdigital">
-            <img src="assets/images/asdigital.png" alt="">
+            <img src="assets/images/asdigital.png" alt="" loading="lazy">
             <h3>ASDigital - video game research project</h3>
           </div>
           <div class="card" data-id="diplay">
-            <img src="assets/images/diplay.png" alt="">
+            <img src="assets/images/diplay.png" alt="" loading="lazy">
             <h3>diPlay - modular gamepad for accessibility</h3>
           </div>
           <div class="card" data-id="100nome">
-            <img src="assets/images/100nome.png" alt="">
+            <img src="assets/images/100nome.png" alt="" loading="lazy">
             <h3>100Nome - video game localization</h3>
           </div>
         </div>
@@ -182,5 +183,6 @@
   <script src="assets/js/downloadIcons.js"></script>
   <script src="assets/js/gameData.js"></script>
   <script src="assets/js/tagDefinitions.js"></script>
+  <script src="assets/js/imageLoader.js"></script>
 </body>
 </html>
