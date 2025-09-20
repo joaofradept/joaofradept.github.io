@@ -96,7 +96,8 @@ const gameData = {
       "assets/images/dungeon-x/230622_32-768x512.jpg",
       "assets/images/dungeon-x/230622_56-768x512.jpg",
       "assets/images/dungeon-x/ePMfmu.png",
-      "assets/images/dungeon-x/kMiTQ9.jpeg"
+      "assets/images/dungeon-x/kMiTQ9.jpeg",
+      "assets/images/dungeon-x/WTWNzoG.png"
     ],
     links: [
       { type: "itch", url: "https://videojogoslusofona.itch.io/dungeonx" },
