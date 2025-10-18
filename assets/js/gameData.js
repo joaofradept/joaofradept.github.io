@@ -13,6 +13,36 @@ const gameData = {
     links: [
       { type: "windows", url: "https://educacaoacessivel.ulusofona.pt/en/3-ciclo/fichatripla/" },
       { type: "mac", url: "https://educacaoacessivel.ulusofona.pt/en/3-ciclo/fichatripla/" }
+    ],
+    events: [
+      {
+        title: "ECGBL Conference",
+        date: "2019",
+        location: "Odense, DK",
+        type: "competition",
+        icon: "🏆"
+      },
+      {
+        title: "MILT Conference",
+        date: "2019",
+        location: "Lisbon, PT",
+        type: "expo",
+        icon: "👥"
+      },
+      {
+        title: "Videojogos Aveiro",
+        date: "2019",
+        location: "Aveiro, PT",
+        type: "expo",
+        icon: "👥"
+      },
+      {
+        title: "Play2Learn",
+        date: "2018",
+        location: "Lisbon, PT",
+        type: "expo",
+        icon: "👥"
+      }
     ]
   },
   "space-adventure": {
@@ -37,7 +67,7 @@ const gameData = {
       "assets/images/desktop-adventure/SCLHRH.png",
       "assets/images/desktop-adventure/4tDvLh.png",
       "assets/images/desktop-adventure/Kf3RcM.png",
-      "assets/images/desktop-adventure/asdigital.webp"
+      "assets/images/desktop-adventure/desktop-adventure.png"
     ],
     links: [
       { type: "windows", url: "https://cicant.itch.io/asdigital-desktop-adventure" }

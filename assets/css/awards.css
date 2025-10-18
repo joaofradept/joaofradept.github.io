@@ -1,0 +1,116 @@
+/* SEÇÃO DE EVENTOS DO PROJETO */
+.project-events {
+  margin: 1.5rem 0;
+  padding: 1.2rem;
+  background: rgba(36, 36, 36, 0.4);
+  border-radius: 10px;
+  border-left: 3px solid #6c5ce7;
+}
+
+.project-events h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-events h4::before {
+  content: '📅';
+  font-size: 1rem;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem;
+  background: rgba(26, 26, 26, 0.6);
+  border-radius: 6px;
+  border: 1px solid #333;
+  transition: all 0.2s ease;
+}
+
+.event-item:hover {
+  border-color: #6c5ce7;
+  transform: translateX(3px);
+}
+
+.event-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  background: rgba(108, 92, 231, 0.2);
+}
+
+.event-content {
+  flex: 1;
+}
+
+.event-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.event-details {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.event-date {
+  color: #6c5ce7;
+  font-weight: 500;
+}
+
+.event-location {
+  color: #a0a0a0;
+}
+
+/* Variantes para diferentes tipos de eventos */
+.event-item.festival .event-icon {
+  background: rgba(225, 112, 85, 0.2);
+}
+
+.event-item.competition .event-icon {
+  background: rgba(0, 184, 148, 0.2);
+}
+
+.event-item.expo .event-icon {
+  background: rgba(253, 203, 110, 0.2);
+}
+
+.event-item.award .event-icon {
+  background: rgba(155, 89, 182, 0.2);
+}
+
+/* Layout compacto para mobile */
+@media (max-width: 768px) {
+  .project-events {
+    padding: 1rem;
+  }
+
+  .event-details {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .event-item {
+    padding: 0.5rem;
+  }
+}

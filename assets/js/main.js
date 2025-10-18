@@ -54,12 +54,17 @@ $(document).ready(function () {
   });
 });
 
-$(".card").on("click", function () {
+$("#games .card").on("click", function () {
   const id = $(this).data("id");
-  showGameDetails(id);
+  showGameDetails(gameData, id);
 });
 
-function showGameDetails(id) {
+$("#projects .card").on("click", function () {
+  const id = $(this).data("id");
+  showGameDetails(projectData, id);
+});
+
+function showGameDetails(gameData, id) {
   const data = gameData[id];
 
   $("#project-title").text(data.title);
@@ -153,6 +158,37 @@ function showGameDetails(id) {
 
     $tagContainer.append($tag);
   });
+
+  // ADICIONE ESTA PARTE DEPOIS DA DESCRIÇÃO
+  const events = data.events || [];
+  const $eventsContainer = $("#project-events");
+  $eventsContainer.empty();
+
+  if (events.length > 0) {
+    $eventsContainer.append('<h4>Project Events & Participation</h4>');
+    const $eventsList = $('<div class="events-list"></div>');
+
+    events.forEach(event => {
+      const $eventItem = $(`
+      <div class="event-item ${event.type || ''}">
+      <div class="event-icon">${event.icon || '📅'}</div>
+      <div class="event-content">
+      <div class="event-title">${event.title}</div>
+      <div class="event-details">
+      <span class="event-date">${event.date}</span>
+      ${event.location ? `<span class="event-location">${event.location}</span>` : ''}
+      </div>
+      </div>
+      </div>
+      `);
+
+      $eventsList.append($eventItem);
+    });
+
+    $eventsContainer.append($eventsList);
+  } else {
+    $eventsContainer.hide(); // Esconde se não houver eventos
+  }
 
   // Remove qualquer galeria anterior
   $(".project-detail .project-gallery").remove();

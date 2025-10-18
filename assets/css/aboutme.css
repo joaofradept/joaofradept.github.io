@@ -1,0 +1,172 @@
+        /* ESTILOS ESPECÍFICOS PARA ABOUT ME */
+        #about {
+        padding: 2rem 0;
+        }
+
+        .about-container {
+          display: flex;
+          gap: 3rem;
+          align-items: flex-start;
+        }
+
+        .profile-section {
+          flex: 0 0 300px;
+          text-align: center;
+        }
+
+        .profile-image {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 3px solid #6c5ce7;
+          box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);
+          margin-bottom: 1.5rem;
+        }
+
+        .profile-title {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+          color: #fff;
+        }
+
+        .profile-subtitle {
+          color: #a0a0a0;
+          margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          margin-top: 1.5rem;
+        }
+
+        .social-links a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #242424;
+          color: #e0e0e0;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          border: 1px solid #333;
+        }
+
+        .social-links a:hover {
+          background: #6c5ce7;
+          transform: translateY(-3px);
+          box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+        }
+
+        .bio-section {
+          flex: 1;
+        }
+
+        .bio-section h2 {
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+          color: #fff;
+          position: relative;
+          display: inline-block;
+        }
+
+        .bio-section h2::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 60px;
+          height: 3px;
+          background: #6c5ce7;
+          box-shadow: 0 0 8px rgba(108, 92, 231, 0.7);
+        }
+
+        .bio-text {
+          margin-bottom: 2rem;
+          line-height: 1.7;
+        }
+
+        .bio-text p {
+          margin-bottom: 1.2rem;
+          color: #a0a0a0;
+        }
+
+        .highlight {
+          color: #fff;
+          font-weight: 500;
+        }
+
+        .skills-section {
+          margin-top: 2rem;
+        }
+
+        .skills-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 1.5rem;
+          margin-top: 1.5rem;
+        }
+
+        .skill-category h3 {
+          color: #fff;
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+          position: relative;
+          padding-left: 15px;
+        }
+
+        .skill-category h3::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 8px;
+          height: 8px;
+          background: #6c5ce7;
+          border-radius: 50%;
+        }
+
+        .skill-list {
+          list-style: none;
+        }
+
+        .skill-list li {
+          padding: 0.5rem 0;
+          color: #a0a0a0;
+          position: relative;
+          padding-left: 20px;
+        }
+
+        .skill-list li::before {
+          content: '▸';
+          position: absolute;
+          left: 0;
+          color: #6c5ce7;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 900px) {
+          .about-container {
+            flex-direction: column;
+          }
+
+          .profile-section {
+            flex: none;
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .wrapper {
+            padding: 2rem;
+          }
+
+          .skills-grid {
+            grid-template-columns: 1fr;
+          }
+        }
