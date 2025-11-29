@@ -38,7 +38,7 @@ const projectData = {
   "gbl4deaf": {
     title: "GBL4Deaf",
     description: "The research project GBL4deaf – Game-Based Learning for Deaf Students [PTDC/COM-CSS/32022/2017] aims to explore the impact of a videogame as a virtual tool to support mathematics learning for deaf and hard of hearing (DHH) students attended the 2nd and 3rd cycle of Basic Education.",
-    tags: ["gamedev", "gbl4deaf"],
+    tags: ["developer", "gbl4deaf"],
     links: [
       { type: "windows", url: "https://gbl4deaf.itch.io/spaceadventure-en" }
     ]
@@ -46,7 +46,7 @@ const projectData = {
   "educacao-acessivel": {
     title: "Educação Acessível",
     description: "This game is part of an e-course with educational materials, a serious game, and visual thinking video tutorials (specially designed for students with ASD) to train them on the basic digital skills they are going to need when they graduate from school. I played a central role in developing and designing this game and represented it abroad.",
-    tags: ["gamedev", "educacaoacessivel"],
+    tags: ["developer", "educacaoacessivel"],
     links: [
       { type: "windows", url: "https://cicant.itch.io/asdigital-desktop-adventure" }
     ],
@@ -66,12 +66,12 @@ const projectData = {
   "operat": {
     title: "OPERAT",
     description: "OPERAT is a workshop for research and production in accessible tangible resources, based at LabTec — Lusófona University's prototyping and “digital manufacturing” laboratory. Features a repository with a variety of video games for people with intellectual impairment made by university students.",
-    tags: ["gamedev", "qa", "operat"]
+    tags: ["developer", "qa", "operat"]
   },
   "asdigital": {
     title: "ASDigital",
     description: "A crazy vehicle that flies to its destination? Two levels (for now), wild colors, power-ups, and a ride that loses lives? It could only be Orange—the vehicle that’s actually green! This is OPL, my most “acclaimed” title back then—a game that’s totally me. It started as a solo project for Programming Languages II, until Diogo Ferreira joined to crank up the madness with new colors and modeling, making the vibe way cooler while keeping my chaotic touch.",
-    tags: ["gamedev", "asdigital"]
+    tags: ["developer", "asdigital"]
   },
   "diplay": {
     title: "diPlay Controller",

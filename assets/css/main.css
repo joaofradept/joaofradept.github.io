@@ -404,9 +404,9 @@ main section.active {
   box-shadow: 0 0 10px rgba(108, 92, 231, 0.4);
 }
 
-#project-media-container {
-position: relative;
-margin-bottom: 30px;
+.media-container {
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .media-container iframe,
@@ -458,7 +458,7 @@ margin-bottom: 30px;
   border: 1px solid #444;
 }
 
-#project-window .gallery-images img {
+.project-detail .gallery-images img {
   width: 50% !important;
   height: 50% !important;
 }
@@ -475,7 +475,7 @@ margin-bottom: 30px;
   padding: 0 1rem;
 }
 
-#project-title {
+.project-title {
 font-family: 'Montserrat', sans-serif;
 font-size: 2.2rem;
 font-weight: 700;
@@ -484,7 +484,7 @@ color: #fff;
 text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
-#project-description {
+.project-description {
 font-family: 'Open Sans', sans-serif;
 font-size: 1.1rem;
 line-height: 1.7;

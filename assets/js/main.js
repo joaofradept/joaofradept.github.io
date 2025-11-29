@@ -56,21 +56,21 @@ $(document).ready(function () {
 
 $("#games .card").on("click", function () {
   const id = $(this).data("id");
-  showGameDetails(gameData, id);
+  showWindowDetails(gameData, id);
 });
 
 $("#projects .card").on("click", function () {
   const id = $(this).data("id");
-  showGameDetails(projectData, id);
+  showWindowDetails(projectData, id);
 });
 
-function showGameDetails(gameData, id) {
+function showWindowDetails(gameData, id) {
   const data = gameData[id];
 
-  $("#project-title").text(data.title);
-  $("#project-description").text(data.description);
+  $(id + " #project-title").text(data.title);
+  $(id + " #project-description").text(data.description);
 
-  const $mediaContainer = $("#project-media-container");
+  const $mediaContainer = $(id + " #project-media-container");
   $mediaContainer.empty();
   const imageSrc = `assets/images/0_covers/${id}.webp`;
 
@@ -120,7 +120,7 @@ function showGameDetails(gameData, id) {
   $(".project-detail").addClass("visible");
 
   const tags = data.tags || [];
-  const $tagContainer = $("#project-tags");
+  const $tagContainer = $(id + " #project-tags");
   $tagContainer.empty();
 
   tags.forEach(tagKey => {
@@ -159,27 +159,27 @@ function showGameDetails(gameData, id) {
     $tagContainer.append($tag);
   });
 
-  // ADICIONE ESTA PARTE DEPOIS DA DESCRIÇÃO
   const events = data.events || [];
-  const $eventsContainer = $("#project-events");
+  const $eventsContainer = $(id + " #project-events");
   $eventsContainer.empty();
 
   if (events.length > 0) {
+    $eventsContainer.show(); // Garante que está visível
     $eventsContainer.append('<h4>Project Events & Participation</h4>');
     const $eventsList = $('<div class="events-list"></div>');
 
     events.forEach(event => {
       const $eventItem = $(`
-      <div class="event-item ${event.type || ''}">
-      <div class="event-icon">${event.icon || '📅'}</div>
-      <div class="event-content">
-      <div class="event-title">${event.title}</div>
-      <div class="event-details">
-      <span class="event-date">${event.date}</span>
-      ${event.location ? `<span class="event-location">${event.location}</span>` : ''}
-      </div>
-      </div>
-      </div>
+        <div class="event-item ${event.type || ''}">
+          <div class="event-icon">${event.icon || '📅'}</div>
+          <div class="event-content">
+            <div class="event-title">${event.title}</div>
+            <div class="event-details">
+              <span class="event-date">${event.date}</span>
+              ${event.location ? `<span class="event-location">${event.location}</span>` : ''}
+            </div>
+          </div>
+        </div>
       `);
 
       $eventsList.append($eventItem);

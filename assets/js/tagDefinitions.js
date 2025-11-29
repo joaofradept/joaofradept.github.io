@@ -1,20 +1,21 @@
 const tagDefinitions = {
   // Roles
-  gamedev:         { label: "Game Development", type: "role" },
-  programmer:         { label: "Software Programmer", type: "role" },
   translator:         { label: "Translator", type: "role" },
+  csharp:        { label: "C#", type: "role" },
+  gamedesign:    { label: "Game Designer", type: "role" },
+  developer:     { label: "Game Developer", type: "role" },
+  programmer:    { label: "Software Programmer", type: "role" },
+  artist3d:     { label: "3D Artist", type: "role" },
+  workshopleader:     { label: "Workshop Leader", type: "role" },
+  qa:     { label: "QA", type: "role" },
+
+  // Engines
   unity:         { label: "Unity", type: "engine" },
   godot:         { label: "Godot", type: "engine" },
   arduino:         { label: "Arduino", type: "engine" },
   visualbasic:         { label: "Visual Basic", type: "engine" },
   netbeans:         { label: "Net Beans / Java", type: "engine" },
   twine:         { label: "Twine", type: "engine" },
-  csharp:        { label: "C#", type: "role" },
-  gamedesign:    { label: "Game Designer", type: "role" },
-  developer:     { label: "Game Developer", type: "role" },
-  artist3d:     { label: "3D Artist", type: "role" },
-  workshopleader:     { label: "Workshop Leader", type: "role" },
-  qa:     { label: "QA", type: "role" },
 
   // Platforms
   webgl:         { label: "WebGL", type: "platform" },

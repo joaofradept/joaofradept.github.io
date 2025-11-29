@@ -11,27 +11,3 @@ const iconMap = {
   devlog:    { icon: "fa-solid fa-pen-nib", label: "Read Devlog", type: "info" },
   site:      { icon: "fa-solid fa-up-right-from-square", label: "Visit Website", type: "link" }
 };
-
-function renderDownloadIcons(links) {
-  const $container = $("#project-media-container");
-  
-  // Remover ícones antigos se existirem
-  $container.find(".download-icons").empty();
-
-  const $iconsWrapper = $("<div>").addClass("download-icons");
-
-  links.forEach(link => {
-    const iconInfo = iconMap[link.type];
-    if (iconInfo) {
-      const $icon = $("<a>")
-        .attr("href", link.url)
-        .attr("target", "_blank")
-        .attr("title", iconInfo.label)
-        .html(`<i class="${iconInfo.icon}"></i>`);
-      $iconsWrapper.append($icon);
-    }
-  });
-
-  $container.append($iconsWrapper);
-}
-

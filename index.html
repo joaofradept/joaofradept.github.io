@@ -205,23 +205,23 @@
         <div class="overlay hidden"></div>
 
         <!-- Detalhes do Jogo -->
+        <!-- Game Window -->
         <div id="game-window" class="project-detail hidden">
           <button class="close-btn">×</button>
-          <div id="project-media-container" class="media-container">
+          <div class="media-container">
             <!-- imagem/vídeo será injetado aqui -->
           </div>
-          <div id="project-downloads" class="download-icons">
-            <!-- botões para acesso ao jogo serão injetados aqui -->
-          </div>
           <div class="text-content">
-            <h2 id="project-title"></h2>
-            <div id="project-tags" class="tag-container"></div>
-            <p id="project-description"></p>
-            <div id="project-events" class="project-events">
+            <h2 class="project-title"></h2>
+            <div class="tag-container"></div>
+            <p class="project-description"></p>
+            <div class="project-events">
                 <!-- eventos serão injetados aqui via JavaScript -->
             </div>
-            <div id="project-gallery" class="gallery-images"></div>
-            <div id="image-lightbox" class="lightbox hidden">
+            <div class="project-gallery">
+                <!-- galeria de imagens será injetada aqui -->
+            </div>
+            <div class="image-lightbox hidden">
               <div class="lightbox-content">
                 <button class="lightbox-close">×</button>
                 <img src="" alt="Expanded image">
@@ -230,37 +230,33 @@
           </div>
         </div>
 
-        <!-- Detalhes do Projeto -->
+        <!-- Project Window -->
         <div id="project-window" class="project-detail hidden">
           <button class="close-btn">×</button>
 
-          <h2 id="project-title"></h2>
-
           <div class="project-content">
-
             <div class="left-content">
-              <p id="project-description"></p>
-            <div id="project-tags" class="tag-container"></div>
+              <h2 class="project-title"></h2>
+              <div class="tag-container"></div>
+              <p class="project-description"></p>
             </div>
 
             <div class="right-content">
-              <div id="project-media-container" class="media-container">
+              <div class="media-container">
                 <!-- imagem/vídeo será injetado aqui -->
               </div>
-              <div id="project-downloads" class="download-icons">
-                <!-- botões para acesso ao jogo serão injetados aqui -->
-              </div>
             </div>
-
           </div>
 
           <div class="text-content">
-            <div id="project-events" class="project-events">
-                <!-- eventos serão injetados aqui via JavaScript -->
+            <div class="project-events">
+              <!-- eventos serão injetados aqui via JavaScript -->
             </div>
-            <div id="project-gallery" class="gallery-images"></div>
+            <div class="project-gallery">
+              <!-- galeria de imagens será injetada aqui -->
+            </div>
+          </div>
         </div>
-      </div>
     </main>
     <footer>
       <p>&copy; 2025 João Frade. All rights reserved.</p>
