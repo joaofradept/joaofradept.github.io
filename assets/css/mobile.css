@@ -67,6 +67,10 @@
     max-height: calc(100vh - env(safe-area-inset-top) - 2vh);
   }
 
+  #project-window .project-content {
+    flex-direction: column-reverse;
+  }
+
   .close-btn {
     width: 100%;
     font-size: 20px;

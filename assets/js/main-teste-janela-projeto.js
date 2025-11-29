@@ -1,11 +1,3 @@
-$(".nav-link").on("click", function (e) {
-  e.preventDefault();
-  const target = $(this).data("target");
-
-  $(".section").hide(); // esconde todas
-  $("#" + target).fadeIn(); // mostra a escolhida
-});
-showSection("projects");
 function showSection(id) {
   document.querySelectorAll("main section").forEach(section => {
     section.classList.remove("active");
@@ -21,42 +13,15 @@ function showSection(id) {
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
+    $('nav a').removeClass('active');
+    $(this).addClass('active');
     showSection(link.dataset.target);
   });
 });
 
-function renderDownloadIcons(links, windowElement) {
-  const $window = $(windowElement);
-  const $container = $window.find(".media-container");
-
-  // Remover ícones antigos se existirem
-  $container.find(".download-icons").empty();
-
-  const $iconsWrapper = $("<div>").addClass("download-icons");
-
-  links.forEach(link => {
-    const iconInfo = iconMap[link.type];
-    if (iconInfo) {
-      const $icon = $("<a>")
-      .attr("href", link.url)
-      .attr("target", "_blank")
-      .attr("title", iconInfo.label)
-      .html(`<i class="${iconInfo.icon}"></i>`);
-      $iconsWrapper.append($icon);
-    }
-  });
-
-  $container.append($iconsWrapper);
-}
-
 $(document).ready(function () {
-  $('nav ul li').click(function () {
-    $('nav ul li').removeClass('active');
-    $(this).addClass('active');
-  });
-
   const $underline = $('.underline');
-  const $menuItems = $('.menu ul li');
+  const $menuItems = $('.menu a');
 
   function updateUnderline($item) {
     const offset = $item.position();
@@ -68,7 +33,7 @@ $(document).ready(function () {
   }
 
   // Inicializa com o item ativo
-  const $initialActive = $('.menu ul li.active');
+  const $initialActive = $('nav a.active');
   if ($initialActive.length) updateUnderline($initialActive);
 
   $menuItems.on('click', function () {
@@ -77,6 +42,26 @@ $(document).ready(function () {
     updateUnderline($(this));
   });
 });
+
+function renderDownloadIcons(links, windowElement) {
+  const $window = $(windowElement);
+  const $container = $window.find(".download-icons");
+
+  // Remover ícones antigos se existirem
+  $container.empty();
+
+  links.forEach(link => {
+    const iconInfo = iconMap[link.type];
+    if (iconInfo) {
+      const $icon = $("<a>")
+      .attr("href", link.url)
+      .attr("target", "_blank")
+      .attr("title", iconInfo.label)
+      .html(`<i class="${iconInfo.icon}"></i>`);
+      $container.append($icon);
+    }
+  });
+}
 
 $("#games .card").on("click", function () {
   const id = $(this).data("id");
@@ -185,13 +170,29 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
   });
 
   // Eventos
-  const events = data.events || [];
+  const eventsData = data.events || [];
+  const eventsIcon = eventsData.icon || '📅';
+  const eventsTitle = `
+  <span style='font-size: 1rem'>${eventsIcon}</span>
+  ${eventsData.title || 'Project Events & Participation'}
+  `;
+  const events = eventsData.list || [];
   const $eventsContainer = $window.find(".project-events");
   $eventsContainer.empty();
 
   if (events.length > 0) {
     $eventsContainer.show();
-    $eventsContainer.append('<h4>Project Events & Participation</h4>');
+
+    const $eventsHeader = $(`
+    <div class="events-header">
+    <h4>${eventsTitle}
+      <div class="events-toggle">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    </h4>
+    </div>
+    `);
+
     const $eventsList = $('<div class="events-list"></div>');
 
     events.forEach(event => {
@@ -200,9 +201,11 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
       <div class="event-icon">${event.icon || '📅'}</div>
       <div class="event-content">
       <div class="event-title">${event.title}</div>
+      ${event.description ? `<div class="event-description">${event.description}</div>` : []}
       <div class="event-details">
-      <span class="event-date">${event.date}</span>
-      ${event.location ? `<span class="event-location">${event.location}</span>` : ''}
+      ${event.date ? `<div class="event-date">${event.date}</div>` : []}
+      ${event.location ? `<span class="event-location">${event.location}</span>` : []}
+      ${event.link ? `<a class="event-link" href="${event.link.url}" ${event.link.target ? `target="${event.link.target}"` : []}>${event.link.title}</a>` : []}
       </div>
       </div>
       </div>
@@ -212,10 +215,21 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
     });
 
     $eventsContainer.append($eventsList);
+
+    // Adiciona o clique para expandir/encolher a secção completa
+    $eventsHeader.on('click', function() {
+      $eventsList.slideToggle(450);
+      $eventsHeader.find('.events-toggle i').toggleClass('fa-chevron-down fa-chevron-up');
+    });
+
+    $eventsContainer.append($eventsHeader);
+    $eventsContainer.append($eventsList);
+
+    // Começa recolhida por padrão
+    $eventsList.hide();
   } else {
     $eventsContainer.hide();
   }
-
   // Galeria
   const $galleryContainer = $window.find(".project-gallery");
   $galleryContainer.empty();
@@ -279,17 +293,27 @@ function closeProjectDetail() {
 }
 
 //a[href^="#"]
-$('a[href="#games"]').on('click', function(event) {
+$('nav a[href="#games"]').on('click', function(event) {
+  scrollDown(event);
+});
+
+$(document).ready(function() {
+  setTimeout(() => {
+    scrollDown();
+  }, 400);
+});
+
+function scrollDown(event) {
   const target = $('.navbar .site-branding');
 
   $(".project-detail").scrollTop(0);
   if (target.length) {
-    event.preventDefault();
+    event?.preventDefault();
     $('html, body').animate({
       scrollTop: target.offset().top
     }, 800); // 800ms de duração
   }
-});
+}
 
 
 function getYouTubeID(url) {

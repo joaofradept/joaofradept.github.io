@@ -142,7 +142,7 @@ header {
 }
 
 .menu ul li a:hover,
-.menu ul li.active a {
+.menu ul li a.active {
   color: #fff;
   text-shadow: 0 0 8px rgba(108, 92, 231, 0.8);
 }
@@ -158,21 +158,7 @@ header {
   box-shadow: 0 0 8px rgba(108, 92, 231, 0.7);
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 1.1rem;
-}
-
-nav ul li {
+nav ul li a {
   cursor: pointer;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
@@ -180,9 +166,15 @@ nav ul li {
   transition: all 0.3s ease;
 }
 
-nav ul li.active,
-nav ul li:hover {
+nav ul li a.active,
+nav ul li a:hover {
   border-color: var(--accent-color);
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #fff;
 }
 
@@ -404,52 +396,46 @@ main section.active {
   box-shadow: 0 0 10px rgba(108, 92, 231, 0.4);
 }
 
-.media-container {
-  position: relative;
-  margin-bottom: 30px;
-}
-
 .media-container iframe,
 .media-container img {
   width: 100%;
   height: 400px;
   object-fit: cover;
   border-radius: 1rem;
-  margin-bottom: 1.5rem;
   border: 1px solid #333;
 }
 
+#game-window .top-content {
+  position: relative;
+  margin-bottom: 54px;
+}
 
-
-
-
-
-
-/* EM TESTE - NOVA JANELA PARA ABRIR PROJETOS */
-
-.project-content {
+#project-window .project-content {
   display: flex;
   gap: 2.5rem;
   margin: 1.5rem 0;
   align-items: flex-start;
 }
-.top-content {
+
+#project-window .top-content {
   display: flex;
   flex-direction: column;
 }
-.left-content {
+
+#project-window .left-content {
   flex: 1;
   min-width: 0; /* Importante para evitar overflow */
 }
 
-.right-content {
+#project-window .right-content {
   flex: 0 0 200px;
   display: flex;
   gap: 1.5rem;
+    position: relative;
 }
 
-.right-content .media-container img,
-.right-content .media-container iframe {
+#project-window .right-content .media-container img,
+#project-window .right-content .media-container iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -463,33 +449,27 @@ main section.active {
   height: 50% !important;
 }
 
-/* FIM DE CONTEUDO EM TESTE */
-
-
-
-
-
-
-
 .text-content {
   padding: 0 1rem;
 }
 
 .project-title {
-font-family: 'Montserrat', sans-serif;
-font-size: 2.2rem;
-font-weight: 700;
-margin-bottom: 1rem;
-color: #fff;
-text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .project-description {
-font-family: 'Open Sans', sans-serif;
-font-size: 1.1rem;
-line-height: 1.7;
-color: #a0a0a0;
-margin-bottom: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 
 .overlay {
@@ -612,7 +592,7 @@ footer a:hover {
   background-size: 100% 4px;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.15;
+  opacity: 0.18;
 }
 
 @keyframes fadeIn {

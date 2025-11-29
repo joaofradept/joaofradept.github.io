@@ -36,7 +36,7 @@
         </div>
         <nav class="menu">
           <ul>
-            <li class="active"><a href="#games" data-target="games">Games</a></li>
+            <li><a class="active" href="#games" data-target="games">Games</a></li>
             <li><a href="#projects" data-target="projects">Projects</a></li>
             <li><a href="#about" data-target="about">About Me</a></li>
             <li><a href="#contact" data-target="contact">Contact</a></li>
@@ -204,12 +204,16 @@
         <!-- Overlay de Janela -->
         <div class="overlay hidden"></div>
 
-        <!-- Detalhes do Jogo -->
-        <!-- Game Window -->
+        <!-- Janela para Jogos -->
         <div id="game-window" class="project-detail hidden">
           <button class="close-btn">×</button>
-          <div class="media-container">
-            <!-- imagem/vídeo será injetado aqui -->
+          <div class="top-content">
+            <div class="media-container">
+              <!-- imagem/vídeo será injetado aqui -->
+            </div>
+            <div class="download-icons">
+                <!-- ícones de descarga serão injetados aqui -->
+            </div>
           </div>
           <div class="text-content">
             <h2 class="project-title"></h2>
@@ -230,7 +234,7 @@
           </div>
         </div>
 
-        <!-- Project Window -->
+        <!-- Janela para Projetos -->
         <div id="project-window" class="project-detail hidden">
           <button class="close-btn">×</button>
 
@@ -244,6 +248,9 @@
             <div class="right-content">
               <div class="media-container">
                 <!-- imagem/vídeo será injetado aqui -->
+              </div>
+              <div class="download-icons">
+                <!-- ícones de descarga serão injetados aqui -->
               </div>
             </div>
           </div>

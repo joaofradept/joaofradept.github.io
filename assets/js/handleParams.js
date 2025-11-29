@@ -17,7 +17,20 @@ document.addEventListener("DOMContentLoaded", () => {
   if (selectedGame) {
     // Wait 800ms before running the detail display
     setTimeout(() => {
-      showGameDetails(selectedGame);
+      $("nav a[data-target=games]").trigger('click');
+
+      showWindowDetails(gameData, selectedGame, "#game-window", true);
+    }, 800);
+  }
+
+  const selectedProject = getQueryParam("project");
+
+  if (selectedProject) {
+    // Wait 800ms before running the detail display
+    setTimeout(() => {
+      $("nav a[data-target=projects]").trigger('click');
+
+      showWindowDetails(projectData, selectedProject, "#project-window", false);
     }, 800);
   }
 });
