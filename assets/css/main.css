@@ -9,7 +9,7 @@
   font-family: 'Noto Sans', 'Segoe UI', sans-serif;
 }
 
-html {
+html, .project-detail {
   scroll-behavior: smooth;
 
   /* Estilo da barra de deslocamento */
@@ -28,6 +28,9 @@ body {
   color: #e0e0e0;
   position: relative;
   overflow-x: hidden;
+
+  /*  Impedir que a barra de deslocamento empurre o conteúdo no Chromium  */
+  width: 100vw;
 }
 
 /* Efeito de partículas no fundo */

@@ -295,7 +295,7 @@ function closeProjectDetail() {
   setTimeout(() => {
     $(".overlay").removeClass("visible closing");
     $(".project-detail").removeClass("visible closing");
-    $("body").css("overflow", "auto");
+    $("body").css("overflow", "hidden auto");
 
     // Remove iframes de vídeo para parar a reprodução
     $(".media-container iframe").remove();
