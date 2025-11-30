@@ -14,14 +14,14 @@ const projectData = {
       list: [
         {
           title: "Workshop Leader of Game Development",
-          description: "Guiding students in game design and programming with Unity, leveraging creativity and leading to great results",
+          description: "Guiding students in game design and programming with Unity, leveraging creativity and leading to great games.",
           type: "competition",
           location: "Lisbon",
           icon: "🔶"
         },
         {
           title: "Activity Examiner",
-          description: "Examining students' activities giving proper feedback, both constructive and encouraging",
+          description: "Examining students' activities, giving proper feedback, both constructive and encouraging.",
           type: "competition",
           location: "Online",
           icon: "🔷"
@@ -31,7 +31,7 @@ const projectData = {
   },
   "gbl4deaf": {
     title: "GBL4Deaf",
-    description: "The research project GBL4deaf – Game-Based Learning for Deaf Students [PTDC/COM-CSS/32022/2017] aims to explore the impact of a videogame as a virtual tool to support mathematics learning for deaf and hard of hearing (DHH) students attended the 2nd and 3rd cycle of Basic Education.",
+    description: "The research project GBL4deaf – Game-Based Learning for Deaf Students [PTDC/COM-CSS/32022/2017] aims to explore the impact of a video game as a virtual tool to support mathematics learning for deaf and hard of hearing (DHH) students attending the 2nd and 3rd cycle of Basic Education.",
     tags: ["developer", "gbl4deaf"],
     events: {
       title: "Game",
@@ -42,7 +42,7 @@ const projectData = {
           type: "award",
           icon: "🎮",
           link: {
-            title: "Visit game >",
+            title: "Visit game",
             url: "?game=space-adventure"
           },
         }
@@ -51,10 +51,10 @@ const projectData = {
   },
   "educacao-acessivel": {
     title: "Educação Acessível",
-    description: "Educação Acessível is the result of a partnership between Casa Pia de Lisboa, IP – CED Jacob Rodrigues Pereira – and the BA in Videogames of the School of Communication, Arts and Technologies – Lusofona University. It aims to produce and distribute free pedagogic video games accessible to deaf children.\n\nAll games were  feature sign language videos, including Portuguese, British, and Brazilian Sign Languages. Most of the games are playable in the browser and can be downloaded.",
+    description: "Educação Acessível is the result of a partnership between Casa Pia de Lisboa, IP – CED Jacob Rodrigues Pereira – and the BA in Video Games of the School of Communication, Arts and Technologies – Lusofona University. It aims to produce and distribute free pedagogic video games accessible to deaf children.\n\nAll games come in sign languages, including Portuguese, British, and Brazilian Sign Languages. Most are playable in the browser, and can be downloaded too.",
     tags: ["developer", "qa", "educacaoacessivel"],
     events: {
-      title: "Prizes & Games",
+      title: "Prize & Games",
       icon: "🏆",
       list: [
         {
@@ -69,7 +69,7 @@ const projectData = {
           type: "game",
           date: "2018",
           link: {
-            title: "Visit game >",
+            title: "Visit game",
             url: "?game=ficha-tripla"
           },
           icon: "🎮"
@@ -79,7 +79,7 @@ const projectData = {
           type: "game",
           date: "2020",
           link: {
-            title: "Visit game >",
+            title: "Visit game",
             url: "?game=o-explorador"
           },
           icon: "🎮"
@@ -88,7 +88,7 @@ const projectData = {
           title: "Other Games",
           type: "game",
           link: {
-            title: "Check out all games >",
+            title: "Check out all games",
             url: "https://educacaoacessivel.ulusofona.pt/en",
             target: "_blank"
           },
@@ -99,7 +99,7 @@ const projectData = {
   },
   "operat": {
     title: "OPERAT",
-    description: "OPERAT is a workshop for research and production in accessible tangible resources, based at LabTec — Lusófona University's prototyping and “digital manufacturing” laboratory. Features a repository with a variety of video games for people with intellectual impairment made by university students.",
+    description: "OPERAT is a workshop for research and production in accessible tangible resources, based at LabTec — Lusófona University's prototyping and “digital manufacturing” laboratory. Features a repository with a variety of video games for people with intellectual impairment made by university students.\n\nMost games are playable in the browser, and can be downloaded too.",
     tags: ["developer", "qa", "operat"]
   },
   "asdigital": {
@@ -115,7 +115,7 @@ const projectData = {
           type: "award",
           icon: "🎮",
           link: {
-            title: "Visit game >",
+            title: "Visit game",
             url: "?game=desktop-adventure"
           },
         }

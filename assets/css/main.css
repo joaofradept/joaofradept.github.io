@@ -189,6 +189,18 @@ main section.active {
   opacity: 1;
 }
 
+.int-link::after {
+  content: ">";
+  font-size: 0.75rem;
+  margin-left: 0.4em;
+}
+
+.ext-link::after {
+  content: "↗";
+  font-size: 0.75rem;
+  margin-left: 0.4em;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -437,7 +449,8 @@ main section.active {
 #project-window .right-content .media-container img,
 #project-window .right-content .media-container iframe {
   width: 100%;
-  height: 100%;
+  --height: 100%;
+  max-height: 250px;
   object-fit: cover;
   object-position: center; /* Controla qual parte da imagem fica visível */
   border-radius: 10px;

@@ -29,44 +29,67 @@ const tagDefinitions = {
   masters:       { label: "Master's Degree", type: "context" },
 
   // Project (with external link)
+  educacaoacessivel_local: {
+    label: "Educação Acessível",
+    type: "project",
+    url: "?project=educacao-acessivel"
+  },
   educacaoacessivel: {
     label: "Educação Acessível",
     type: "project",
+    target: "_blank",
     url: "https://educacaoacessivel.ulusofona.pt/en/"
   },
   operat: {
     label: "OPERAT",
     type: "project",
+    target: "_blank",
     url: "https://operat.ulusofona.pt/"
+  },
+  gbl4deaf_local: {
+    label: "GBL4Deaf",
+    type: "project",
+    url: "?project=gbl4deaf"
   },
   gbl4deaf: {
     label: "GBL4Deaf",
     type: "project",
+    target: "_blank",
     url: "https://gbl4deaf.ulusofona.pt/thegame/"
   },
   casadocareto: {
     label: "Casa do Careto",
     type: "project",
+    target: "_blank",
     url: "https://www.caretosdepodence.pt/casadocareto"
+  },
+  asdigital_local: {
+    label: "ASDigital",
+    type: "project",
+    url: "?project=asdigital"
   },
   asdigital: {
     label: "ASDigital",
     type: "project",
+    target: "_blank",
     url: "https://asdigital.ulusofona.pt/"
   },
   tumopt: {
     label: "TUMO",
     type: "project",
+    target: "_blank",
     url: "https://tumo.pt/"
   },
   diplay: {
     label: "diPlay Controller, TOM Global",
     type: "project",
+    target: "_blank",
     url: "https://tomglobal.org/project?id=640f12e06377df4983ce077c"
   },
   cnome: {
     label: "100Nome",
     type: "project",
+    target: "_blank",
     url: "https://100nome.blogs.sapo.pt/"
   },
   // Highlight

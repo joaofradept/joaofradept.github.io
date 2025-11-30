@@ -3,7 +3,7 @@ const gameData = {
     title: "Ficha Tripla (Triple Plug)",
     description: "A HUGE welcome to all reading this! Let us introduce the most thrilling math game for deaf players and everyone else in the world!—who’s ready to soar with tangled cables, lightning bolts, and pure chaos. At light speed, can you reach the legendary Ficha Tripla (it's a... triple socket adapter)? That’s the challenge waiting on every map. This is your chaos. This is your game. ⚡ This is your Fichaaaaa! ⚡",
     video: "https://youtu.be/G_H5imJwk_g",
-    tags: ["unity", "gamedesign", "developer", "undergraduate", "educacaoacessivel", "years:2017-2019"],
+    tags: ["unity", "gamedesign", "developer", "undergraduate", "educacaoacessivel_local", "years:2017-2019"],
     gallery: [
       "assets/images/ficha-tripla/3-fichatripla.png",
       "assets/images/ficha-tripla/6-fichatripla.png",
@@ -21,8 +21,8 @@ const gameData = {
           title: "ECGBL Conference",
           date: "2019",
           location: "Odense, DK",
-          type: "competition",
-          icon: "🏆"
+          type: "expo",
+          icon: "👥"
         },
         {
           title: "MILT Conference",
@@ -50,9 +50,9 @@ const gameData = {
   },
   "space-adventure": {
     title: "Space Adventure - Defend the Planet",
-    description: "Space Adventure: Defend the Planet is a research-based game aimed at supporting a more inclusive education in primary maths for deaf and hard of hearing (DHH) students, as well as to their hearing peers. Work in progress results shows an increase in mathematics achievement between 8% and 20% for 6 participants, while no improvement for 4 participants. Space Adventure: Defend the Planet contributes to the following SDGs: “Quality Education”, “Good Health and Well-being”, “Reduced Inequalities” and “No poverty”.",
+    description: "Space Adventure: Defend the Planet is a research-based game aimed at supporting a more inclusive education in primary maths for deaf and hard of hearing (DHH) students, as well as to their hearing peers. This game contributes to the following SDGs: “Quality Education”, “Good Health and Well-being”, “Reduced Inequalities” and “No Poverty”.",
     video: "https://youtu.be/LxgiG_WcxxU",
-    tags: ["unity", "developer", "gbl4deaf", "years:2019-2022"],
+    tags: ["unity", "developer", "gbl4deaf_local", "years:2019-2022"],
     gallery: [
       "assets/images/space-adventure/WorldCinematic_L.jpg",
       "assets/images/space-adventure/LGPPanel_L.jpg",
@@ -64,8 +64,8 @@ const gameData = {
   },
   "desktop-adventure": {
     title: "ASDigital - Desktop Adventure",
-    description: "This game is part of an e-course with educational materials, a serious game, and visual thinking video tutorials (specially designed for students with ASD) to train them on the basic digital skills they are going to need when they graduate from school. I played a central role in developing and designing this game and represented it abroad.",
-    tags: ["unity", "gamedesign", "developer", "asdigital", "years:2022"],
+    description: "This game is an interactive computer simulation aimed at teaching children with and without ASD about how to use a computer and cybersecurity. It is part of an e-course with educational materials, a serious game, and visual thinking video tutorials (specially designed for students with ASD) to train them on the basic digital skills they are going to need when they graduate from school.",
+    tags: ["unity", "gamedesign", "developer", "asdigital_local", "years:2022"],
     gallery: [
       "assets/images/desktop-adventure/SCLHRH.png",
       "assets/images/desktop-adventure/4tDvLh.png",
@@ -106,7 +106,7 @@ const gameData = {
   },
   "careto": {
     title: "Careto",
-    description: "Careto is a single-player edutainment puzzle-platformer about a centuries-old Portuguese Carnival. Caretos are creatures of a mysterious Carnival from Podence, a village in the north of Portugal. It celebrates the end of winter and the beginning of spring.",
+    description: "Careto is a cultural puzzle-platformer where players learn by playing. Step into the iconic mask of a Careto and navigate the vibrant chaos of a Portuguese tradition. Each puzzle you solve represents a step in the real-world ritual, from chasing villagers with ramhorns to ringing bells. This single-player experience was designed to preserve and share this intangible heritage, making it accessible both online and as a featured exhibit at the Casa do Careto museum.",
     video: "https://youtu.be/AmQbDUuYqh4",
     tags: ["unity", "developer", "casadocareto", "years:2021"],
     gallery: [
@@ -153,8 +153,8 @@ const gameData = {
   },
   "o-explorador": {
     title: "The Explorer",
-    description: "We wake up inside an interesting cavern. Who are we?! This time, explorers! This is a Math Game in adventure format in which two explorers overcome challenges to reach a treasure. It is accessible to deaf students in the 3rd cycle of basic education, and includes questions and instructions in Portuguese, British, and Brazilian Sign Languages. Math topic: probabilities.",
-    tags: ["unity", "gamedesign", "developer", "educacaoacessivel", "years:2020"],
+    description: "In The Explorer, players experience a turn-based digital board game, inspired by the Goose Game, where they compete by clicking to roll the dice and move their explorer across the board. The path to victory is built on probability, with each correct answer to a math question propelling a player closer to the treasure. This experience is fully accessible, with all content available in Portuguese, British, and Brazilian Sign Languages. Check out the Educação Acessível project for more accessible games.",
+    tags: ["unity", "gamedesign", "developer", "educacaoacessivel_local", "years:2020"],
     gallery: [
       "assets/images/o-explorador/explorador-6.png",
       "assets/images/o-explorador/explorador-9.png",

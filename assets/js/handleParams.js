@@ -5,32 +5,50 @@ function getQueryParam(param) {
 }
 
 function removeQueryParam(param) {
-  const url = new URL(window.location); // copia o URL atual
-  url.searchParams.delete(param);       // remove o parâmetro
-  history.replaceState({}, "", url);    // substitui o URL sem recarregar
+  const url = new URL(window.location);
+  url.searchParams.delete(param);
+  history.replaceState({}, "", url);
+}
+
+function removeAllQueryParams() {
+  const url = new URL(window.location);
+  url.search = ""; // Limpa tudo
+  history.replaceState({}, "", url);
+}
+
+function clickLink(link) {
+  link.click();
+
+  showSection(link.data("target"));
 }
 
 // Load the correct game detail if "game" parameter is in the URL
-document.addEventListener("DOMContentLoaded", () => {
-  const selectedGame = getQueryParam("game");
+$(document).ready(function() {
+  const configs = [
+    {
+      param: "game",
+      navSelector: 'nav a[data-target=games]',
+      data: gameData,
+      windowSelector: "#game-window",
+      isGame: true,
+    },
+    {
+      param: "project",
+      navSelector: 'nav a[data-target=projects]',
+      data: projectData,
+      windowSelector: "#project-window",
+      isGame: false,
+    }
+  ];
 
-  if (selectedGame) {
-    // Wait 800ms before running the detail display
-    setTimeout(() => {
-      $("nav a[data-target=games]").trigger('click');
+  configs.forEach(config => {
+    const selectedItem = getQueryParam(config.param);
 
-      showWindowDetails(gameData, selectedGame, "#game-window", true);
-    }, 800);
-  }
-
-  const selectedProject = getQueryParam("project");
-
-  if (selectedProject) {
-    // Wait 800ms before running the detail display
-    setTimeout(() => {
-      $("nav a[data-target=projects]").trigger('click');
-
-      showWindowDetails(projectData, selectedProject, "#project-window", false);
-    }, 800);
-  }
+    if (selectedItem) {
+      clickLink($(config.navSelector));
+      setTimeout(() => {
+        showWindowDetails(config.data, selectedItem, config.windowSelector, config.isGame);
+      }, 800); //800
+    }
+  });
 });

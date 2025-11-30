@@ -21,7 +21,7 @@ document.querySelectorAll("nav a").forEach(link => {
 
 $(document).ready(function () {
   const $underline = $('.underline');
-  const $menuItems = $('.menu a');
+  const $menuItems = $('nav a');
 
   function updateUnderline($item) {
     const offset = $item.position();
@@ -154,10 +154,19 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
         $tag = $("<a>")
         .addClass("tag")
         .addClass(type)
+        .attr("target", tagInfo.target ?? "")
         .attr("href", tagInfo.url)
-        .attr("target", "_blank")
         .attr("rel", "noopener noreferrer")
         .text(label);
+
+        if (tagInfo.target === "_blank") {
+          $tag
+          .addClass("ext-link");
+        }
+        else {
+          $tag
+          .addClass("int-link");
+        }
       } else {
         $tag = $("<span>")
         .addClass("tag")
@@ -205,7 +214,8 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
       <div class="event-details">
       ${event.date ? `<div class="event-date">${event.date}</div>` : []}
       ${event.location ? `<span class="event-location">${event.location}</span>` : []}
-      ${event.link ? `<a class="event-link" href="${event.link.url}" ${event.link.target ? `target="${event.link.target}"` : []}>${event.link.title}</a>` : []}
+      ${event.link ? `<a class="event-link ${event.link.target === "_blank" ? "ext-link" : "int-link"}"
+      href="${event.link.url}" ${event.link.target ? `target="${event.link.target}"` : []}>${event.link.title}</a>` : []}
       </div>
       </div>
       </div>
@@ -278,7 +288,7 @@ $(document).on("keydown", function (e) {
 });
 
 function closeProjectDetail() {
-  removeQueryParam("game"); // remove o ?game=xyz da barra de endereços
+  removeAllQueryParams();
   $(".project-detail").addClass("closing");
   $(".overlay").addClass("closing");
 
@@ -292,7 +302,6 @@ function closeProjectDetail() {
   }, 250);
 }
 
-//a[href^="#"]
 $('nav a[href="#games"]').on('click', function(event) {
   scrollDown(event);
 });
