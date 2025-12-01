@@ -4,8 +4,13 @@
   width: 100%;
 }
 
+.menu {
+  display: block;
+}
+
 /* Estilo do botão de menu */
 .menu-toggle {
+  color: white;
   display: none;
   font-size: 2rem;
   background: none;
@@ -35,7 +40,9 @@
 
   .menu {
     display: none;
+    margin-top: 10px;
     width: 100%;
+    overflow: hidden;
   }
 
   .menu ul {
@@ -44,11 +51,6 @@
     gap: 1rem;
     width: 100%;
     padding: 0;
-  }
-
-  .menu.open {
-    margin-top: 10px;
-    display: block;
   }
   
   .menu .underline {
@@ -69,6 +71,11 @@
 
   #project-window .project-content {
     flex-direction: column-reverse;
+  }
+
+  #project-window .project-content .right-content,
+  #project-window .project-content .right-content .media-container {
+    width: 100%;
   }
 
   .close-btn {
