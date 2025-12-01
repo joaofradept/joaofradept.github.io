@@ -39,10 +39,11 @@
   }
 
   .menu {
-    display: none;
     margin-top: 10px;
     width: 100%;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease-in-out;
   }
 
   .menu ul {

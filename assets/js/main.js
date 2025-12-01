@@ -22,13 +22,25 @@ document.querySelectorAll("nav a").forEach(link => {
 $(document).ready(function () {
   const $underline = $('.underline');
   const $menuItems = $('nav a');
+  let currentActive = $('nav a.active').first();
+
+  // Forçar atualização após um breve delay quando a orientação mudar
+  $(window).on('resize orientationchange', function() {
+    setTimeout(() => {
+      if (currentActive && currentActive.length) {
+        updateUnderline(currentActive);
+      }
+    }, 300);
+  });
 
   function updateUnderline($item) {
+    currentActive = $('nav a.active').first();
+
     const offset = $item.position();
     const width = $item.outerWidth();
     $underline.css({
-      left: offset.left,
-      width: width
+      width: width,
+      transform: `translateX(${offset.left}px)`
     });
   }
 
