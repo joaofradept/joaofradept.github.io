@@ -61,12 +61,12 @@ body::before {
   inset 0 2px 4px rgba(108, 92, 231, 0.1),
   inset 0 -2px 4px rgba(0, 0, 0, 0.4),
   0 8px 20px rgba(0, 0, 0, 0.6);
-  --padding: 2rem;
   padding: 3rem 4rem;
   max-width: 1200px;
   width: 100%;
   animation: floatIn 0.8s ease-out;
   position: relative;
+  z-index: 90;
 }
 
 /* Efeito de brilho subtil nas bordas */
@@ -398,7 +398,7 @@ main section.active {
   transition: all 0.8s ease;
   border-radius: 8px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 110;
   position: relative;
   border: 1px solid #333;
 }
@@ -406,7 +406,7 @@ main section.active {
 .project-gallery img.expanded {
   max-width: 90%;
   max-height: 80vh;
-  z-index: 10;
+  z-index: 120;
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);
   border: 1px solid var(--accent-color);
@@ -517,10 +517,6 @@ main section.active {
 
 .close-btn {
   position: absolute;
-  --top: 1.2rem;
-  --right: 1.5rem;
-  --font-size: 1.8rem;
-  --border-radius: 0.5rem;
   top: 0;
   right: 0;
   font-size: 1.1rem;
@@ -531,7 +527,6 @@ main section.active {
   padding: 0.4rem 0.8rem;
   cursor: pointer;
   transition: background 0.3s ease;
-  z-index: 1;
 }
 
 .close-btn:hover {
@@ -615,7 +610,7 @@ footer a:hover {
                               rgba(0, 0, 0, 0) 50%);
   background-size: 100% 4px;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 99;
   opacity: 0.18;
 }
 
