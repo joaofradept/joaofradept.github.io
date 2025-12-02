@@ -195,30 +195,6 @@ main section.active {
   opacity: 1;
 }
 
-.int-link,
-.ext-link {
-  text-decoration: none;
-  transition: scale ease-in-out .2s, filter ease-in-out .1s;
-}
-
-.int-link:hover,
-.ext-link:hover
-{
-/*   filter: brightness(1.1); */
-}
-
-.ext-link:hover
-{
-  scale: 1.05;
-  filter: brightness(1.1);
-}
-
-.int-link:hover
-{
-  scale: 0.95;
-  filter: brightness(0.9);
-}
-
 .int-link::after {
   font-family: FontAwesome;
   content: "\f292";

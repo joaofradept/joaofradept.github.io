@@ -47,6 +47,24 @@
     color: #fff;
     position: relative;
     box-shadow: 0 0 10px rgba(108, 92, 231, 0.5);
+    text-decoration: none;
+}
+
+.tag.project.int-link,
+.tag.project.ext-link {
+    transition: scale ease-in-out .2s, filter ease-in-out .1s;
+}
+
+.tag.project.ext-link:hover
+{
+    scale: 1.05;
+    filter: brightness(1.1);
+}
+
+.tag.project.int-link:hover
+{
+    scale: 0.95;
+    filter: brightness(0.9);
 }
 
 .tag-container {
