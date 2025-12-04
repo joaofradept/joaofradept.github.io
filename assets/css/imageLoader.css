@@ -1,20 +1,41 @@
 .img-spinner {
   width: 100%;
-  padding-top: 56.25%; /* proporção 16:9 para placeholder */
-  background: repeating-linear-gradient(
-    45deg,
-    #ddd,
-    #ddd 10px,
-    #eee 10px,
-    #eee 20px
+  padding-top: 56.25%; /* 16:9 */
+  background: linear-gradient(
+    90deg,
+    #2a2a2a 0%,
+    #333 50%,
+    #2a2a2a 100%
   );
-  background-size: 200% 200%;
+  background-size: 200% 100%;
   animation: shimmer 1.5s infinite linear;
-  border-radius: 10px;
+  border-radius: 8px;
   position: relative;
+  overflow: hidden;
+}
+
+.img-spinner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(108, 92, 231, 0.1) 50%,
+                              transparent 100%
+  );
+  animation: slide 1.5s infinite ease-in-out;
+}
+
+@keyframes slide {
+  0% { left: -150%; }
+  100% { left: 100%; }
 }
 
 @keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
