@@ -132,8 +132,11 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
     const $img = $("<img>")
     .attr("src", imageSrc);
 
+    const $wrapper = $("<div>").css("position", "relative");
+    $wrapper.append($img);
+
     addImageLoader($img);
-    $mediaContainer.append($img);
+    $mediaContainer.append($wrapper);
   }
 
   // Mostra a janela
