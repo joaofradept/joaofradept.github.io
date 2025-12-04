@@ -4,7 +4,7 @@ function addImageLoader($img) {
   .addClass("img-spinner")
   .insertBefore($img);
 
-  $img.hide(); // invisível mas ocupa espaço
+  $img.hide(); // invisível
 
   $img.on("load", function () {
     $spinner.remove();

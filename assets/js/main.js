@@ -122,7 +122,7 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
       });
     });
 
-    const $wrapper = $("<div>").addClass("video-thumb").css("position", "relative");
+    const $wrapper = $("<div>").addClass("video-thumb");
     const $playBtn = $("<div>").addClass("play-button");
     $wrapper.append($img).append($playBtn);
 
