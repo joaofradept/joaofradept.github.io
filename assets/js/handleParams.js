@@ -16,17 +16,11 @@ function removeAllQueryParams() {
   history.replaceState({}, "", url);
 }
 
-function clickLink($navLink) {
-  $('nav a').removeClass('active');
-  $navLink.addClass('active');
-  showSection($navLink.data("target"));
-}
-
-/*function clickLink(link) {
+function clickLink(link) {
   link.click();
 
   showSection(link.data("target"));
-}*/
+}
 
 // Load the correct game detail if "game" parameter is in the URL
 $(document).ready(function() {
