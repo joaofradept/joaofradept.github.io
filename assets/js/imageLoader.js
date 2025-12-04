@@ -1,14 +1,17 @@
 function addImageLoader($img) {
   // Cria spinner antes da imagem
-  const $spinner = $("<div>")
+  /*const $spinner = $("<div>")
   .addClass("img-spinner")
   .insertBefore($img);
+*/
+  //$img.hide(); // invisível
 
-  $img.hide(); // invisível
+  $img.addClass("img-spinner");
 
   $img.on("load", function () {
-    $spinner.remove();
-    $img.fadeIn(400); // aparece suavemente
+    //$spinner.remove();
+    //$img.fadeIn(400); // aparece suavemente
+    $img.removeClass("img-spinner");
   });
 
   // Se já estiver carregada (cache)
