@@ -130,8 +130,7 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
     $mediaContainer.append($wrapper);
   } else {
     const $img = $("<img>")
-    .attr("src", imageSrc)
-    .addClass("project-image");
+    .attr("src", imageSrc);
 
     addImageLoader($img);
     $mediaContainer.append($img);

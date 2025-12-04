@@ -25,11 +25,11 @@ $("img").each(function () {
   .addClass("img-spinner")
   .insertBefore($img);
 
-  $img.hide(); // esconde a imagem até estar pronta
+  $img.css('opacity', 0); // invisível mas ocupa espaço
 
   $img.on("load", function () {
     $spinner.remove();   // remove o spinner
-    $img.fadeIn(400);    // aparece suavemente
+    $img.animate({opacity: 1}, 400); // aparece suavemente
   });
 
   // Se a imagem já estiver em cache
