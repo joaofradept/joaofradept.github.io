@@ -14,14 +14,14 @@ const projectData = {
       list: [
         {
           title: "Workshop Leader of Game Development",
-          description: "Guiding students in game design and programming with Unity, leveraging creativity and leading to great games.",
+          description: "Guiding students in level design and programming with Unity, leveraging creativity and leading to great games",
           type: "competition",
           location: "Lisbon",
           icon: "🔶"
         },
         {
           title: "Activity Examiner",
-          description: "Examining students' activities, giving proper feedback, both constructive and encouraging.",
+          description: "Examining students' activities, giving proper feedback, both constructive and encouraging",
           type: "competition",
           location: "Online",
           icon: "🔷"
