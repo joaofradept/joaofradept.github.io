@@ -11,7 +11,7 @@ function addImageLoader($img) {
     $img.fadeIn(400); // aparece suavemente
   });
 
-  // Se já tiver carregada (cache)
+  // Se já estiver carregada (cache)
   if ($img[0].complete) {
     $img.trigger("load");
   }

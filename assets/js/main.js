@@ -261,7 +261,7 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
   if (data.gallery && data.gallery.length > 0) {
     data.gallery.forEach((src, index) => {
       const angle = (Math.random() * 6 - 3).toFixed(2);
-      const $imgWrapper = $("<div>").addClass("image-wrapper");
+      const $imgWrapper = $("<div>").addClass("image-wrapper").css("position", "relative");
       const $img = $("<img>")
       .attr("src", src)
       .css("transform", `rotate(${angle}deg)`)
