@@ -281,8 +281,8 @@ function showWindowDetails(gameData, id, windowElement, galleryExpanded) {
         $imgWrapper.addClass("expanded");
       }
 
-      addImageLoader($img);
       $imgWrapper.append($img);
+      addImageLoader($img);
       $galleryContainer.append($imgWrapper);
     });
   }
