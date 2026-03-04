@@ -90,7 +90,7 @@ const tagDefinitions = {
     label: "100Nome",
     type: "project",
     target: "_blank",
-    url: "https://100nome.blogs.sapo.pt/"
+    url: "https://100nome.net/"
   },
   // Highlight
   highlight: {
