@@ -1,7 +1,7 @@
 const projectData = {
   "tumo": {
     title: "TUMO",
-    description: "At each TUMO Centre, 1,500 young people aged between 12 and 18 will acquire skills in eight subject areas at the intersection of technology and creativity: Animation, Game Development, Photography, Programming, Music, Graphic Design, Film and Robotics.",
+    description: "TUMO is a free extracurricular educational program for young people aged 12–18, placing them in control of their own learning through self-learning activities, workshops and advanced labs across creative technology fields.",
     tags: ["workshopleader", "tumopt", "years:2024-Today"],
     gallery: [
       "assets/images/tumo/tumo1.jpg",
@@ -9,21 +9,31 @@ const projectData = {
       "assets/images/tumo/tumo3.jpg"
     ],
     events: {
-      title: "Tasks",
+      title: "My work & contributions",
       icon: "🚩",
       list: [
         {
           title: "Workshop Leader of Game Development",
-          description: "Guiding students in level design and programming with Unity, leveraging creativity, and leading to great games.",
+          description: "Teaching game development with Unity to students aged 12–18, covering programming, 3D development and level design, while mentoring students throughout their projects.",
           type: "competition",
-          location: "Lisbon",
           icon: "🔶"
         },
         {
-          title: "Activity Examiner",
-          description: "Examining students' activities, giving proper feedback, both constructive and encouraging.",
+          title: "Game Jam TUMO 2026",
+          description: "Designed and directed TUMO Lisboa's first guided Game Jam for 20 students, creating the challenge structure, defining development goals and leading students throughout the event.",
           type: "competition",
-          location: "Online",
+          icon: "🔷"
+        },
+        {
+          title: "Tools, Materials & Activities",
+          description: "Developing custom tools, workshop materials and activities to improve the learning experience and support students' independent work.",
+          type: "competition",
+          icon: "🔷"
+        },
+        {
+          title: "Activity Examiner",
+          description: "Reviewing and evaluating students' activities, providing clear and constructive feedback to help them improve their technical skills and creative work.",
+          type: "competition",
           icon: "🔷"
         }
       ]
