@@ -47,12 +47,12 @@ const tagDefinitions = {
     url: "https://operat.ulusofona.pt/"
   },
   gbl4deaf_local: {
-    label: "GBL4Deaf",
+    label: "GBL4deaf",
     type: "project",
     url: "?project=gbl4deaf"
   },
   gbl4deaf: {
-    label: "GBL4Deaf",
+    label: "GBL4deaf",
     type: "project",
     target: "_blank",
     url: "https://gbl4deaf.ulusofona.pt/thegame/"

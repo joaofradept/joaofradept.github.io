@@ -50,7 +50,7 @@ const gameData = {
   },
   "space-adventure": {
     title: "Space Adventure - Defend the Planet",
-    description: "Space Adventure: Defend the Planet is a research-based game aimed at supporting a more inclusive education in primary maths for deaf and hard of hearing (DHH) students, as well as to their hearing peers. This game contributes to the following SDGs: “Quality Education”, “Good Health and Well-being”, “Reduced Inequalities” and “No Poverty”.",
+    description: "Space Adventure: Defend the Planet is a research-based adventure and puzzle game designed to support an inclusive approach to mathematics education for deaf and hard of hearing (DHH) students and their hearing peers. Players take on the role of a commander rebuilding a space base attacked by pirates, solving challenges and collecting resources while upgrading their base and spaceships.",
     video: "https://youtu.be/LxgiG_WcxxU",
     tags: ["unity", "developer", "gbl4deaf_local", "years:2019-2022"],
     gallery: [

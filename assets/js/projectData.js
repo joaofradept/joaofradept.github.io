@@ -40,16 +40,17 @@ const projectData = {
     }
   },
   "gbl4deaf": {
-    title: "GBL4Deaf",
-    description: "The research project GBL4deaf – Game-Based Learning for Deaf Students [PTDC/COM-CSS/32022/2017] aims to explore the impact of a video game as a virtual tool to support mathematics learning for deaf and hard of hearing (DHH) students attending the 2nd and 3rd cycle of Basic Education.",
+    title: "GBL4deaf",
+    description: "The research project GBL4deaf – Game-Based Learning for Deaf Students [PTDC/COM-CSS/32022/2017] explored the use of video games as a tool to support mathematics learning among deaf and hard of hearing (DHH) students in the 2nd and 3rd cycles of Basic Education.",
     tags: ["developer", "gbl4deaf"],
     events: {
-      title: "Game",
+      title: "Project Outcome",
       icon: "🎮",
       list: [
         {
           title: "Space Adventure - Defend the Planet",
-          type: "award",
+          description: "Research-based educational game developed as part of the GBL4deaf project.",
+          type: "game",
           icon: "🎮",
           link: {
             title: "Visit game",
