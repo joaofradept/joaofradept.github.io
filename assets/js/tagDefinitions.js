@@ -14,7 +14,7 @@ const tagDefinitions = {
   godot:         { label: "Godot", type: "engine" },
   arduino:         { label: "Arduino", type: "engine" },
   visualbasic:         { label: "Visual Basic", type: "engine" },
-  netbeans:         { label: "Net Beans / Java", type: "engine" },
+  netbeans:         { label: "NetBeans / Java", type: "engine" },
   twine:         { label: "Twine", type: "engine" },
 
   // Platforms
