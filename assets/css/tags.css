@@ -50,21 +50,24 @@
     text-decoration: none;
 }
 
+.tag.project.ext-link {
+    background: #8d57dc;
+    box-shadow: 0 0 10px rgba(141, 87, 220, 0.5);
+}
+
 .tag.project.int-link,
 .tag.project.ext-link {
     transition: scale ease-in-out .2s, filter ease-in-out .1s;
 }
 
-.tag.project.ext-link:hover
-{
-    scale: 1.05;
-    filter: brightness(1.1);
+.tag.project.int-link:hover {
+    scale: 0.95;
+    filter: brightness(0.9) saturate(0.9);
 }
 
-.tag.project.int-link:hover
-{
-    scale: 0.95;
-    filter: brightness(0.9);
+.tag.project.ext-link:hover {
+    scale: 1.05;
+    filter: brightness(1.1) saturate(1.05);
 }
 
 .tag-container {
