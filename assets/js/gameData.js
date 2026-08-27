@@ -1,7 +1,7 @@
 const gameData = {
   "ficha-tripla": {
     title: "Ficha Tripla (Triple Plug)",
-    description: "A HUGE welcome to all reading this! Let us introduce the most thrilling math game for deaf players and everyone else in the world!—who’s ready to soar with tangled cables, lightning bolts, and pure chaos. At light speed, can you reach the legendary Ficha Tripla (it's a... triple socket adapter)? That’s the challenge waiting on every map. This is your chaos. This is your game. ⚡ This is your Fichaaaaa! ⚡",
+    description: "Ficha Tripla (Triple Plug) is a math-based puzzle game developed for deaf and hard of hearing students as part of the Educação Acessível project. Navigate tangled cables, solve math challenges and reach the legendary Ficha Tripla at lightning speed!! ⚡⚡ Its playful personality and chaotic energy helped keep the game engaging across several events and conferences.",
     video: "https://youtu.be/G_H5imJwk_g",
     tags: ["unity", "gamedesign", "developer", "undergraduate", "educacaoacessivel_local", "years:2017-2019"],
     gallery: [
@@ -78,7 +78,7 @@ const gameData = {
   },
   "o-popo-laranja": {
     title: "O Popó Laranja (The Orange Vehicle)",
-    description: "A crazy vehicle that flies to its destination? Two levels (for now), wild colors, power-ups, and a ride that loses lives? It could only be Orange—the vehicle that’s actually green! This is OPL, my most “acclaimed” title back then—a game that’s totally me. It started as a solo project for Programming Languages II, until Diogo Ferreira joined to crank up the madness with new colors and modeling, making the vibe way cooler while keeping my chaotic touch.",
+    description: "A crazy vehicle that flies to its destination? Two levels (for now), wild colors, power-ups, and a ride that loses lives? It could only be Orange... the vehicle that’s actually green! OPL was probably my most “acclaimed” game back then. It started as a solo project for Programming Languages II, until Diogo Ferreira joined in, adding new colors and modeling, making the vibe way cooler while keeping my chaotic touch.",
     video: "https://youtu.be/sHaiwfBAwIY",
     tags: ["unity", "gamedesign", "developer", "undergraduate", "years:2017"],
     gallery: [
@@ -139,7 +139,7 @@ const gameData = {
   },
   "vaca-cos-porcos": {
     title: "Vaca C'os Porcos",
-    description: "Vaca C'os Porcos is a shooter game that might vaguely remind you of classics like Space Invaders—but with a very Moo twist! This game is a love letter to our favorite archipelago of cows: the Azores! Fun fact: This was my first game ever! Made as a school project for 12th-grade Computer Applications, I dove into coding with barely any experience—and somehow pulled it off (pretty well, huh? 😀). Over the years, I kept tinkering with it, adding more cow-tastic madness!",
+    description: "Vaca C'os Porcos is a shooter game loosely inspired by classics like Space Invaders... But with a very Moo twist! Set in the Azores, you fight waves of falling cows, improve your skills through practice and try to beat your previous high scores.\n\nThis was my first game ever, made as a school project for 12th-grade Computer Applications when I had barely any programming experience. Over the years, I kept tinkering with it, adding new ideas, improvements and visual mods.",
     video: "https://youtu.be/GVGNOzZOC9I",
     tags: ["visualbasic", "gamedesign", "developer", "firstgame", "years:2014"],
     gallery: [
@@ -153,7 +153,7 @@ const gameData = {
   },
   "o-explorador": {
     title: "The Explorer",
-    description: "In The Explorer, players experience a turn-based digital board game, inspired by the Goose Game, where they compete by clicking to roll the dice and move their explorer across the board. The path to victory is built on probability, with each correct answer to a math question propelling a player closer to the treasure. This experience is fully accessible, with all content available in Portuguese, British, and Brazilian Sign Languages. Check out the Educação Acessível project for more accessible games.",
+    description: "The Explorer is a 3D turn-based digital board game for two players, inspired by the Goose Game. I redesigned and developed the original student project, combining 3D character movement, game design and programming with math questions and probability. The game is fully accessible, with content available in Portuguese, British, and Brazilian Sign Languages.",
     tags: ["unity", "gamedesign", "developer", "educacaoacessivel_local", "years:2020"],
     gallery: [
       "assets/images/o-explorador/explorador-6.png",
@@ -167,7 +167,7 @@ const gameData = {
   },
   "z-o-p": {
     title: "Z, o P (Z, the P)",
-    description: "This game aims to zeach you zhe Z Cipher through fun above all else. The Roman alphabet is gone—only Z remains. Z, Z, why?? Fear not! You’ve been granted the power to wield the mighty Z. So, arm yourself and shoot down the zombie alphabet charging at you… using every key on your computer!",
+    description: "The Roman alphabet is gone... Only Z remains. Z, Z, why?? Fear not! You’ve been granted the power to wield the mighty Z. Arm yourself and shoot down the zombie alphabet charging at you… using every key on your computer! This game aims to zeach you zhe Z Cipher through fun above all else.",
     video: "https://youtu.be/LRtYArWPh3c",
     tags: ["unity", "gamedesign", "developer", "undergraduate", "years:2017"],
     gallery: [],
@@ -177,7 +177,7 @@ const gameData = {
   },
   "precipitacao": {
     title: "Precipitação",
-    description: "Have you ever had a demanding boss that forces you to take unusual objects to the workplace? Probably not, but this is also not a regular game. Precipitação is the game with the weirdest concept ever. On the positive side, I expect! I made it alone for an exam, even though its base idea came from collaborating with other crazy little peeps who helped make this possible. Initially, it was going to be a game with trains – featuring Thomas and friends – nevertheless, it didn't lose its solid base in the concept-making, which was the use of a great amount of dark humour.",
+    description: "Precipitação is a time-pressure game where you have to reach work while staying dry. Buy cheap items from a Chinese shop, collect money from the ground and negotiate with homeless people to get the right gear before the rain ruins your day. It started as a group idea and became a solo project, packed with weird design choices, humor and references.",
     tags: ["unity", "gamedesign", "developer", "undergraduate", "years:2017"],
     gallery: [],
     links: [
@@ -186,7 +186,7 @@ const gameData = {
   },
   "come-isso": {
     title: "Come Isso! (Eat It!)",
-    description: "This is a game that works with time pressure and in which for everything you have to scream. You're the chef waiter in a restaurant, so you have to respond to your customers' requests. And they might talk to you softly and well explain, but as well deliver a shout, and you got to understand what that is! If you hope for success, you must have happy customers and interpret their requests on the first try! Once again, a little crazy idea. This one has a Builder in which you can edit and make levels!",
+    description: "A time-pressure restaurant game where you have to understand and respond to customers' requests... by shouting! One of my early programming projects, made in Java with NetBeans and featuring a level builder for creating your own levels.",
     tags: ["netbeans", "gamedesign", "developer", "undergraduate", "years:2016"],
     gallery: [],
     links: [
@@ -196,7 +196,7 @@ const gameData = {
   "capitao-iglo": {
     title: "Captain Iglo's True Story",
     tags: ["twine", "gamedesign", "developer", "masters", "years:2022"],
-    description: "Ever wondered how Captain Iglo’s fish fingers are really made? Maybe play it safe and file a claim now... Welcome to Greenland’s most secretive fish factory in Tasiilaq, where Ukluk and Oki will guide you through its questionable origins—and prepare you to digest the cruel truth about fish fingers made from... [your worst nightmare]. Think you can stomach it?",
+    description: "Ever wondered how Captain Iglo’s fish fingers are really made? Maybe play it safe and don't eat them just yet... Welcome to Greenland’s most secretive fish factory in Tasiilaq, where Ukluk and Oki will guide you through its questionable origins, and prepare you to digest the cruel truth about fish fingers made from... [your worst nightmare]. Think you can stomach it?",
     gallery: [],
     links: [
       { type: "web", url: "https://100nome.itch.io/capitao-iglo-avh" }

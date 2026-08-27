@@ -118,11 +118,12 @@ const projectData = {
     description: "ASDigital aims to:\n\n(1) Develop an e-course with educational materials, a serious game, and visual thinking video tutorials (specially designed for students with ASD) to train them on the basic digital skills they are going to need when they graduate from school;\n\n(2) Deliver a training course to directly train secondary-school teachers on online learning, a skill necessary for their professional development.",
     tags: ["developer", "asdigital"],
     events: {
-      title: "Game",
+      title: "Project Outcome",
       icon: "🎮",
       list: [
         {
           title: "Desktop Adventure",
+          description: "Interactive educational game developed as part of the ASDigital project.",
           type: "award",
           icon: "🎮",
           link: {
