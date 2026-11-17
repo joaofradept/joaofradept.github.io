@@ -161,6 +161,7 @@ const gameData = {
       "assets/images/o-explorador/explorador-16.png"
     ],
     links: [
+      { type: "web", url: "https://operat.ulusofona.pt/recursos/videojogos/play/o-explorador-play/?textos=en&gestos=bsl" },
       { type: "windows", url: "https://educacaoacessivel.ulusofona.pt/en/3-ciclo/explorador/" },
       { type: "mac", url: "https://educacaoacessivel.ulusofona.pt/en/3-ciclo/explorador/" }
     ]
