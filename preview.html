@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Frade — Bouas!</title>
+  <meta name="description" content="Faço jogos, ensino miúdos a fazê-los e traduzo jogos para português desde 2009. Projectos, experiências e outras coisas que me dão na cabeça." />
+  <meta property="og:title" content="João Frade — Bouas!" />
+  <meta property="og:description" content="Faço jogos, ensino miúdos a fazê-los e traduzo jogos para português desde 2009." />
+  <meta property="og:image" content="social_cover.webp" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/desktop.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="desk">
+    <nav class="dock" aria-label="Secções do site">
+      <a class="dock-item" href="#destaques">
+        <i class="fa-solid fa-star" aria-hidden="true"></i>
+        <span>Destaques</span>
+      </a>
+      <a class="dock-item" href="#mais">
+        <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+        <span>Também fiz</span>
+      </a>
+      <a class="dock-item" href="#gaveta">
+        <i class="fa-solid fa-box-archive" aria-hidden="true"></i>
+        <span>A gaveta</span>
+      </a>
+      <a class="dock-item" href="#sobre">
+        <i class="fa-solid fa-user-astronaut" aria-hidden="true"></i>
+        <span>Sobre</span>
+      </a>
+      <a class="dock-item" href="#contacto">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <span>Contacto</span>
+      </a>
+      <button class="dock-item dock-sound" id="sound-toggle" type="button" aria-pressed="false" title="Ligar os barulhinhos">
+        <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>
+        <span>Som</span>
+      </button>
+    </nav>
+
+    <main class="window" id="janela">
+      <div class="titlebar">
+        <div class="tb-dots" aria-hidden="true">
+          <span></span><span></span>
+          <button class="tb-close" id="tb-close" type="button" aria-label="Fechar a janela">×</button>
+        </div>
+        <div class="tb-title">C:\João\site_pessoal.exe</div>
+        <div class="tb-status"><span class="blink">●</span> a funcionar</div>
+      </div>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>★ bem-vindo ao meu canto da internet ★ feito à mão, sem framework ★ zero cookies ★ agora com 100% mais personalidade ★ fecha a janela, se conseguires ★</span>
+          <span>★ bem-vindo ao meu canto da internet ★ feito à mão, sem framework ★ zero cookies ★ agora com 100% mais personalidade ★ fecha a janela, se conseguires ★</span>
+        </div>
+      </div>
+
+      <div class="win-body">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-text">
+            <p class="eyebrow">Bouas! Bem-vindo ao meu canto da internet.</p>
+            <h1 id="hero-title">Faço jogos, ensino miúdos a fazê-los e traduzo jogos para português desde 2009.</h1>
+            <p class="lead">Não por um plano de carreira. Porque me dá na cabeça. Este site é onde guardo o que faço, o que estou a fazer e algumas coisas que só fazem sentido se souberes a história.</p>
+            <ul class="chips" aria-label="O que sou">
+              <li>Game dev</li>
+              <li>Formador</li>
+              <li>Tradutor</li>
+              <li>Curioso profissional</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#destaques">Ver os destaques <span aria-hidden="true">↓</span></a>
+              <a class="btn btn-ghost" href="mailto:joaofradept@gmail.com">Falar comigo</a>
+            </div>
+            <p class="now-line"><span class="now-dot" aria-hidden="true"></span> Agora: <strong>Anamara 3D</strong> e aulas no <strong>TUMO</strong>.</p>
+          </div>
+
+          <figure class="polaroid">
+            <img src="assets/images/JoaoFrade_foto.jpg" alt="Retrato de João Frade" />
+            <figcaption>Eu. Provavelmente a explicar porque é que o bug não é um bug.</figcaption>
+          </figure>
+        </section>
+
+        <section id="destaques" class="section" aria-labelledby="destaques-title">
+          <div class="section-head">
+            <span class="section-index" aria-hidden="true">01</span>
+            <h2 id="destaques-title">Em destaque</h2>
+            <p class="section-note">Quatro coisas que dizem mais sobre mim do que um CV.</p>
+          </div>
+
+          <div class="featured">
+            <button class="fcard f-1" data-open="anamara-3d" type="button">
+              <span class="fcard-media"><img src="assets/images/anamara.webp" alt="" loading="lazy" /></span>
+              <span class="fcard-body">
+                <span class="kicker">Projecto pessoal · em desenvolvimento</span>
+                <span class="fcard-title">Anamara 3D</span>
+                <span class="fcard-pitch">Terror psicológico em primeira pessoa. Faço tudo: modelo, texturizo, programo, escrevo e ainda giro o Discord.</span>
+                <span class="fcard-facts">
+                  <span class="fact"><span class="fact-k">desde</span><span class="fact-v">2020</span></span>
+                  <span class="fact"><span class="fact-k">motor</span><span class="fact-v">Unity + Blender</span></span>
+                  <span class="fact"><span class="fact-k">equipa</span><span class="fact-v">eu, sozinho</span></span>
+                </span>
+                <span class="fcard-more">ver o projecto <span aria-hidden="true">→</span></span>
+              </span>
+            </button>
+
+            <div class="f-col">
+              <button class="fcard f-2" data-open="space-adventure" type="button">
+                <span class="fcard-media"><img src="assets/images/space-adventure.webp" alt="" loading="lazy" /></span>
+                <span class="fcard-body">
+                  <span class="kicker">Investigação GBL4deaf · 2019–2022</span>
+                  <span class="fcard-title">Space Adventure</span>
+                  <span class="fcard-pitch">Investigação sobre jogos e matemática para alunos surdos que acabou num jogo a sério, usado em salas de aula.</span>
+                  <span class="fcard-more">ver o projecto <span aria-hidden="true">→</span></span>
+                </span>
+              </button>
+
+              <button class="fcard f-3" data-open="tumo" type="button">
+                <span class="fcard-media"><img src="assets/images/tumo.webp" alt="" loading="lazy" /></span>
+                <span class="fcard-body">
+                  <span class="kicker">Trabalho actual · desde 2024</span>
+                  <span class="fcard-title">TUMO Lisboa</span>
+                  <span class="fcard-pitch">Ensino game development a miúdos dos 12 aos 18. Também desenhei e dirigi o primeiro game jam do TUMO Lisboa.</span>
+                  <span class="fcard-more">ver o projecto <span aria-hidden="true">→</span></span>
+                </span>
+              </button>
+            </div>
+
+            <button class="fcard f-4" data-open="100nome" type="button">
+              <span class="fcard-media"><img src="assets/images/100nome.webp" alt="" loading="lazy" /></span>
+              <span class="fcard-body">
+                <span class="kicker">Projecto pessoal · desde 2009</span>
+                <span class="fcard-title">100Nome Traduções</span>
+                <span class="fcard-pitch">Tradução e localização de jogos para português europeu. E um site que mantenho há 17 anos, feito à mão, com público e tudo.</span>
+                <span class="fcard-more">ver o projecto <span aria-hidden="true">→</span></span>
+              </span>
+            </button>
+          </div>
+        </section>
+
+        <section id="mais" class="section" aria-labelledby="mais-title">
+          <div class="section-head">
+            <span class="section-index" aria-hidden="true">02</span>
+            <h2 id="mais-title">Também fiz</h2>
+            <p class="section-note">Aqui mostra-se a amplitude: hardware, museus, acessibilidade, investigação.</p>
+          </div>
+
+          <div class="mini-grid">
+            <button class="mcard" data-open="careto" type="button">
+              <span class="mcard-media"><img src="assets/images/careto.webp" alt="" loading="lazy" /></span>
+              <span class="mcard-body">
+                <span class="mcard-title">Careto</span>
+                <span class="mcard-pitch">Puzzle-platformer sobre uma tradição portuguesa. Está exposto num museu.</span>
+              </span>
+            </button>
+
+            <button class="mcard" data-open="dungeon-x" type="button">
+              <span class="mcard-media"><img src="assets/images/dungeon-x.webp" alt="" loading="lazy" /></span>
+              <span class="mcard-body">
+                <span class="mcard-title">Dungeon X</span>
+                <span class="mcard-pitch">Um jogo feito de mais de 200 LEDs e seis hexágonos.</span>
+              </span>
+            </button>
+
+            <button class="mcard" data-open="educacao-acessivel" type="button">
+              <span class="mcard-media"><img src="assets/images/educacao-acessivel.webp" alt="" loading="lazy" /></span>
+              <span class="mcard-body">
+                <span class="mcard-title">Educação Acessível</span>
+                <span class="mcard-pitch">Jogos gratuitos para crianças surdas, em LGP, BSL e Libras.</span>
+              </span>
+            </button>
+
+            <button class="mcard" data-open="asdigital" type="button">
+              <span class="mcard-media"><img src="assets/images/asdigital.webp" alt="" loading="lazy" /></span>
+              <span class="mcard-body">
+                <span class="mcard-title">ASDigital</span>
+                <span class="mcard-pitch">Simulação para ensinar competências digitais a alunos com e sem ASD.</span>
+              </span>
+            </button>
+
+            <button class="mcard" data-open="diplay" type="button">
+              <span class="mcard-media"><img src="assets/images/diplay.webp" alt="" loading="lazy" /></span>
+              <span class="mcard-body">
+                <span class="mcard-title">diPlay</span>
+                <span class="mcard-pitch">Um comando modular e barato para pessoas com deficiência motora.</span>
+              </span>
+            </button>
+
+            <button class="mcard" data-open="operat" type="button">
+              <span class="mcard-media"><img src="assets/images/operat.webp" alt="" loading="lazy" /></span>
+              <span class="mcard-body">
+                <span class="mcard-title">OPERAT</span>
+                <span class="mcard-pitch">Laboratório e repositório de recursos tangíveis acessíveis.</span>
+              </span>
+            </button>
+          </div>
+        </section>
+
+        <section id="gaveta" class="section" aria-labelledby="gaveta-title">
+          <div class="section-head">
+            <span class="section-index" aria-hidden="true">03</span>
+            <h2 id="gaveta-title">A gaveta</h2>
+            <p class="section-note">Projectos de faculdade, primeiros jogos e experiências. Estão aqui porque fazem parte da história — não porque são o meu melhor trabalho.</p>
+          </div>
+
+          <div class="rows">
+            <button class="row" data-open="vaca-cos-porcos" type="button">
+              <span class="row-year">2014</span>
+              <span class="row-title">Vaca C'os Porcos</span>
+              <span class="row-note">O meu primeiro jogo. Visual Basic, 12.º ano, vacas a cair.</span>
+              <span class="row-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="row" data-open="come-isso" type="button">
+              <span class="row-year">2016</span>
+              <span class="row-title">Come Isso!</span>
+              <span class="row-note">Jogo de restaurante onde gritas com os clientes. Java.</span>
+              <span class="row-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="row" data-open="z-o-p" type="button">
+              <span class="row-year">2017</span>
+              <span class="row-title">Z, o P</span>
+              <span class="row-note">Shoot 'em up para aprender o alfabeto… com zombies.</span>
+              <span class="row-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="row" data-open="precipitacao" type="button">
+              <span class="row-year">2017</span>
+              <span class="row-title">Precipitação</span>
+              <span class="row-note">Chegar ao trabalho sem te molhares. Absurdo por design.</span>
+              <span class="row-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="row" data-open="o-popo-laranja" type="button">
+              <span class="row-year">2017</span>
+              <span class="row-title">O Popó Laranja</span>
+              <span class="row-note">Um veículo voador que é verde. Não perguntes.</span>
+              <span class="row-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="row" data-open="capitao-iglo" type="button">
+              <span class="row-year">2022</span>
+              <span class="row-title">Captain Iglo's True Story</span>
+              <span class="row-note">Como são feitos os fish fingers. Não comas antes de jogar.</span>
+              <span class="row-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </section>
+
+        <section id="sobre" class="section" aria-labelledby="sobre-title">
+          <div class="section-head">
+            <span class="section-index" aria-hidden="true">04</span>
+            <h2 id="sobre-title">Sobre mim</h2>
+          </div>
+
+          <div class="about">
+            <div class="about-text">
+              <p>Sou o João. Comecei a mexer em computadores pequeno — Windows XP, depois 7, hoje Linux — e nunca perdi o gosto de mandar no meu próprio PC. Gosto de cores, de vida e de coisas que se exploram. O contrário de um site flat.</p>
+              <p>A minha área de estudo é game development, mas o que faço é mais largo do que isso: programo, modelo, texturizo, escrevo, ensino, traduzo e faço sites. Aprendo o que a coisa precisa até a coisa existir. Generalista por escolha, não por dispersão.</p>
+              <p>O fio que atravessa quase tudo é a acessibilidade: jogos para alunos surdos, para pessoas autistas, para deficiência motora. Não é um nicho que apanhei por acaso — é o que me faz continuar.</p>
+              <p>Fora do trabalho: jogos Flash antigos, Trackmania, coisas esquisitas da internet de 2000, e projectos que começam com “e se eu fizesse…”.</p>
+            </div>
+
+            <aside class="note-card" aria-label="Coisas que me fizeram">
+              <h3>Fui feito disto</h3>
+              <p>Windows XP, MSN, sites em Flash com som, CD-ROMs de jogos duvidosos, Trackmania United Forever, Garfield Scary Scavenger Hunt, Neighbours from Hell, 102 Dálmatas.</p>
+              <p>Hoje: Linux, Anamara 3D, e continuo a achar que a internet era mais divertida.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section id="contacto" class="section" aria-labelledby="contacto-title">
+          <div class="section-head">
+            <span class="section-index" aria-hidden="true">05</span>
+            <h2 id="contacto-title">Contacto</h2>
+            <p class="section-note">Se te identificares com isto, melhor ainda. É assim que quero encontrar trabalho.</p>
+          </div>
+
+          <div class="contact-card">
+            <p class="contact-lead">Manda mensagem. Falo de jogos, de acessibilidade, de traduções, ou de coisas parvas que encontraste na internet.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:joaofradept@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/joaofradept/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/joaofradept/" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://joaofradept.itch.io/" target="_blank" rel="noopener">itch.io</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <p>Feito à mão em HTML, CSS e JavaScript. Sem framework, sem build, sem pressa.</p>
+          <p class="footer-meta">© 2026 João Frade · última actualização em Novembro de 2026 · melhor visto num ecrã, qualquer um</p>
+          <p class="hit-counter" aria-hidden="true">visitantes: 000.001 <span>(eu e a minha mãe)</span></p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="bubble hidden" id="bubble" role="status" aria-live="polite"></div>
+
+  <div class="overlay hidden" id="overlay"></div>
+
+  <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-bar">
+      <span class="modal-kicker" id="modal-kicker"></span>
+      <button class="modal-close" id="modal-close" type="button" aria-label="Fechar">×</button>
+    </div>
+    <div class="modal-scroll">
+      <h2 class="modal-title" id="modal-title"></h2>
+      <div class="modal-media"></div>
+      <div class="modal-body"></div>
+      <div class="modal-gallery" hidden></div>
+    </div>
+  </div>
+
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="assets/js/gameData.js"></script>
+  <script src="assets/js/projectData.js"></script>
+  <script src="assets/js/tagDefinitions.js"></script>
+  <script src="assets/js/desktop.js"></script>
+</body>
+</html>
